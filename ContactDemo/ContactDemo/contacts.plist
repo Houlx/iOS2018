@@ -6,26 +6,26 @@
 	<array>
 		<dict>
 			<key>name</key>
-			<string>aa</string>
+			<string>AA</string>
 			<key>phone</key>
 			<string>234567</string>
 			<key>email</key>
-			<string>fghj</string>
+			<string>fghj@qq.com</string>
 			<key>addr</key>
-			<string>fghdsfgh</string>
+			<string>xx路xx号</string>
 		</dict>
 	</array>
 	<key>B</key>
 	<array>
 		<dict>
 			<key>name</key>
-			<string>bb</string>
+			<string>BB</string>
 			<key>phone</key>
 			<string>2345678987654</string>
 			<key>email</key>
-			<string>fsdaghjg</string>
+			<string>fsdaghjg@dffdfs.com</string>
 			<key>addr</key>
-			<string>dfsabg</string>
+			<string>xx St.</string>
 		</dict>
 	</array>
 	<key>C</key>

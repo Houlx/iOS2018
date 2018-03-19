@@ -21,8 +21,14 @@
     // self.clearsSelectionOnViewWillAppear = NO;
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    [self.tableView registerClass :[UITableViewCell class] forCellReuseIdentifier:@"CellIdentifier"];
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+
+//    NSArray *tempList = [self.contactData allKeys];
+//    self.keys = [tempList sortedArrayUsingSelector:@selector(compare:)];
+    self.data = [self.contactData allValues];
+
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellIdentifier"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,8 +54,11 @@
     }
 
 //    NSInteger row= [indexPath row];
-    cell.textLabel.text = self.contactData[@"phone"];
+//    cell.textLabel.text = self.contactData[@"phone"];
 
+    NSInteger row = [indexPath row];
+
+    cell.textLabel.text = self.data[(NSUInteger) row];
     return cell;
 }
 

@@ -22,6 +22,8 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
 
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *plistPath = [bundle pathForResource:@"contacts" ofType:@"plist"];
 
@@ -53,7 +55,7 @@
     NSDictionary *dict = listContacts[row];  //选中其中一个联系人（是一个字典）
 
     cell.textLabel.text = dict[@"name"];
-    NSLog(@"tableView:cellForRowAtIndexPath");
+//    NSLog(@"tableView:cellForRowAtIndexPath");
     return cell;
 }
 
@@ -66,7 +68,6 @@
     NSString *groupName = self.listGroupName[section];
     NSArray *listContacts = self.dictData[groupName];
     NSDictionary *dict = listContacts[row];
-
 
 
     detailViewController.contactData = dict;

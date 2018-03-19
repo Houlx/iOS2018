@@ -11,5 +11,7 @@
 @interface DetailViewController : UITableViewController
 
 @property (nonatomic, strong)NSDictionary *contactData;
+@property (nonatomic, strong)NSArray *data;
+@property (nonatomic, strong)NSArray *keys;
 
 @end
