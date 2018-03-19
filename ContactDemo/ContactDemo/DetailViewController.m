@@ -76,12 +76,6 @@
     }
 }
 
-- (void)btnActionForUserSetting:(id)sender {
-//    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-//    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-//    cell.textLabel.text = @"abc";
-}
-
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
