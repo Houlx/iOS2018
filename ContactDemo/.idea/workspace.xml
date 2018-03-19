@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="05c4ba73-3e42-46e4-a883-13f768b22e11" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ContactDemo/DetailViewController.m" afterPath="$PROJECT_DIR$/ContactDemo/DetailViewController.m" />
     </list>
     <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/ContactDemo-gknphvmlcbnslfalptbrbhnvbrxi/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,7 +12,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_09a03a531892184fa3a149a6280d560c34e41e23" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_349FE3D2-40BF-47A1-8317-617211EE3973" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="contacts.plist" pinned="false" current-in-tab="false">
@@ -51,7 +50,7 @@
       <file leaf-file-name="DetailViewController.m" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ContactDemo/DetailViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
+            <state relative-caret-position="510">
               <caret line="76" column="1" lean-forward="false" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
               <folding />
             </state>
@@ -183,12 +182,12 @@
       <workItem from="1521443017609" duration="2444000" />
       <workItem from="1521446294917" duration="5688000" />
       <workItem from="1521452819182" duration="1168000" />
-      <workItem from="1521459284165" duration="5047000" />
+      <workItem from="1521459284165" duration="5248000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14347000" />
+    <option name="totallyTimeSpent" value="14548000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,7 +420,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ContactDemo/DetailViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
+        <state relative-caret-position="510">
           <caret line="76" column="1" lean-forward="false" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
           <folding />
         </state>
