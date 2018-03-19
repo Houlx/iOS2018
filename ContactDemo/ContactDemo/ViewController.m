@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+
     NSBundle *bundle = [NSBundle mainBundle];
     NSString *plistPath = [bundle pathForResource:@"contacts" ofType:@"plist"];
 
@@ -25,16 +29,20 @@
 
     NSArray *tempList = [self.dictData allKeys];
     self.listGroupName = [tempList sortedArrayUsingSelector:@selector(compare:)];
+
+    self.title = @"联系人";
+
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellIdentifier"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSString *groupName = self.listGroupName[(NSUInteger) section];
     NSArray *listContacts = self.dictData[groupName];
-    NSLog(@"%@ has %ld contacts\n",groupName, (long) [listContacts count]);
     return [listContacts count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
     static NSString *cellIdentifier = @"CellIdentifier";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
 
@@ -49,14 +57,32 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSUInteger section = (NSUInteger) [indexPath section];
+    NSUInteger row = (NSUInteger) [indexPath row];
+
+    DetailViewController *detailViewController = [[DetailViewController alloc] initWithStyle:UITableViewStylePlain];
+
+    NSString *groupName = self.listGroupName[section];
+    NSArray *listContacts = self.dictData[groupName];
+    NSDictionary *dict = listContacts[row];
+
+
+
+    detailViewController.contactData = dict;
+    detailViewController.title = dict[@"name"];
+
+    [self.navigationController pushViewController:detailViewController animated:TRUE];
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    NSLog(@"numberOfSectionsInTableView");
+//    NSLog(@"numberOfSectionsInTableView");
     return [self.listGroupName count];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSString *groupName = self.listGroupName[(NSUInteger) section];
-    NSLog(@"tableView:titleForHeaderInSection");
+//    NSLog(@"tableView:titleForHeaderInSection");
     return groupName;
 }
 
@@ -66,7 +92,7 @@
         NSString *title = [item substringToIndex:1];
         [listTitles addObject:title];
     }
-    NSLog(@"sectionIndexTitlesForTableView");
+//    NSLog(@"sectionIndexTitlesForTableView");
     return listTitles;
 }
 

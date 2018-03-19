@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EDC6F745DBC4757290895F1 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC6C4A2FCE0E0C69EE0E7D /* DetailViewController.m */; };
 		62AC3E59205F97A5001242B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AC3E58205F97A5001242B2 /* AppDelegate.m */; };
 		62AC3E5C205F97A5001242B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AC3E5B205F97A5001242B2 /* ViewController.m */; };
 		62AC3E5F205F97A5001242B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62AC3E5D205F97A5001242B2 /* Main.storyboard */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5EDC65B02ECC4B0F192BF43C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		5EDC6C4A2FCE0E0C69EE0E7D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		62AC3E54205F97A5001242B2 /* ContactDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AC3E57205F97A5001242B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		62AC3E58205F97A5001242B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -113,6 +116,8 @@
 				62AC3E62205F97A5001242B2 /* LaunchScreen.storyboard */,
 				62AC3E65205F97A5001242B2 /* Info.plist */,
 				62AC3E66205F97A5001242B2 /* main.m */,
+				5EDC65B02ECC4B0F192BF43C /* DetailViewController.h */,
+				5EDC6C4A2FCE0E0C69EE0E7D /* DetailViewController.m */,
 			);
 			path = ContactDemo;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				62AC3E5C205F97A5001242B2 /* ViewController.m in Sources */,
 				62AC3E67205F97A5001242B2 /* main.m in Sources */,
 				62AC3E59205F97A5001242B2 /* AppDelegate.m in Sources */,
+				5EDC6F745DBC4757290895F1 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
