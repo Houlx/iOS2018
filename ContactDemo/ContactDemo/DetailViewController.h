@@ -14,4 +14,6 @@
 @property (nonatomic, strong)NSArray *data;
 @property (nonatomic, strong)NSArray *keys;
 
+@property (nonatomic, strong)NSArray *array;
+
 @end

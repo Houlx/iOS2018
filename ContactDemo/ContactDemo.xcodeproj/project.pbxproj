@@ -444,7 +444,7 @@
 				DEVELOPMENT_TEAM = UD4PDXT9JQ;
 				INFOPLIST_FILE = ContactDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hou.ContactDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "hou.-315";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -458,7 +458,7 @@
 				DEVELOPMENT_TEAM = UD4PDXT9JQ;
 				INFOPLIST_FILE = ContactDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hou.ContactDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = "hou.-315";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

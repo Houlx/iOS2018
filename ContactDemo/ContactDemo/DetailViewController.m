@@ -26,7 +26,13 @@
 
 //    NSArray *tempList = [self.contactData allKeys];
 //    self.keys = [tempList sortedArrayUsingSelector:@selector(compare:)];
+    self.keys = [self.contactData allKeys];
     self.data = [self.contactData allValues];
+
+    NSString *phone = [[NSString alloc] initWithFormat:@"%@%@", @"Phone: ", (NSString *) self.contactData[@"phone"]];
+    NSString *email = [[NSString alloc] initWithFormat:@"%@%@", @"Email: ", (NSString *) self.contactData[@"email"]];
+    NSString *addr = [[NSString alloc] initWithFormat:@"%@%@", @"Address: ", (NSString *) self.contactData[@"addr"]];
+    self.array = @[phone, email, addr];
 
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellIdentifier"];
 }
@@ -40,7 +46,7 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.contactData count];
+    return [self.contactData count] - 1;
 }
 
 
@@ -58,10 +64,23 @@
 
     NSInteger row = [indexPath row];
 
-    cell.textLabel.text = self.data[(NSUInteger) row];
+    cell.textLabel.text = self.array[(NSUInteger) row];
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    NSLog(@"%ld %ld", (long) indexPath.section, (long) indexPath.row);
+    if (0 == (long) indexPath.row) {
+        NSString *tel= [[NSString alloc] initWithFormat:@"%@%@",@"tel://",self.contactData[@"phone"]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:tel]];
+    }
+}
+
+- (void)btnActionForUserSetting:(id)sender {
+//    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//    UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+//    cell.textLabel.text = @"abc";
+}
 
 /*
 // Override to support conditional editing of the table view.
