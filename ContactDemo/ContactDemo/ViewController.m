@@ -51,11 +51,11 @@
     NSUInteger section = (NSUInteger) [indexPath section];
     NSUInteger row = (NSUInteger) [indexPath row];
     NSString *groupName = self.listGroupName[section];
-    NSArray *listContacts = self.dictData[groupName];   //字典数组
-    NSDictionary *dict = listContacts[row];  //选中其中一个联系人（是一个字典）
+    NSArray *listContacts = self.dictData[groupName];
+    NSDictionary *dict = listContacts[row];
 
     cell.textLabel.text = dict[@"name"];
-//    NSLog(@"tableView:cellForRowAtIndexPath");
+
     return cell;
 }
 
@@ -77,13 +77,13 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//    NSLog(@"numberOfSectionsInTableView");
+
     return [self.listGroupName count];
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSString *groupName = self.listGroupName[(NSUInteger) section];
-//    NSLog(@"tableView:titleForHeaderInSection");
+
     return groupName;
 }
 
@@ -93,7 +93,7 @@
         NSString *title = [item substringToIndex:1];
         [listTitles addObject:title];
     }
-//    NSLog(@"sectionIndexTitlesForTableView");
+
     return listTitles;
 }
 
