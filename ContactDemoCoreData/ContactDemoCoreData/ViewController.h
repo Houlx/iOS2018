@@ -14,7 +14,10 @@
     NSManagedObjectContext *context;
 }
 
-@property (strong, nonatomic)NSMutableArray *listName;
+@property(strong, nonatomic) NSMutableArray *listName;
+
+@property(strong, nonatomic) NSString *name;
+@property(strong, nonatomic) NSString *phone;
+@property(strong, nonatomic) NSString *addr;
 
 @end
-

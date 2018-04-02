@@ -24,7 +24,23 @@
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+//    CGRect screen = [[UIScreen mainScreen] bounds];
+//    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+//    [button setTitle:@"TEST" forState:UIControlStateNormal];
+//    CGFloat buttonWidth = 50;
+//    CGFloat buttonHeight = 50;
+//    CGFloat buttonTopView = screen.size.height - buttonHeight;
+//    button.frame = CGRectMake(0, 150, buttonWidth, buttonHeight);
+//    [self.view addSubview:button];
+//
+//    [button addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
 }
+
+//- (void)onClick:(id)sender {
+//    TestViewController *test = [[TestViewController alloc] init];
+//    [self.navigationController pushViewController:test animated:YES];
+//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

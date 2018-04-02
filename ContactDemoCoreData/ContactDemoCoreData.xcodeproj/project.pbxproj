@@ -7,79 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5EDC61BB749B6BE3B563CFA7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC62DDCE716170E9390481 /* DetailViewController.m */; };
-		6250F1E1206F852B00CA4662 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250F1E0206F852B00CA4662 /* AppDelegate.m */; };
-		6250F1E4206F852B00CA4662 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250F1E3206F852B00CA4662 /* ViewController.m */; };
-		6250F1E7206F852B00CA4662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6250F1E5206F852B00CA4662 /* Main.storyboard */; };
-		6250F1EA206F852B00CA4662 /* ContactDemoCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6250F1E8206F852B00CA4662 /* ContactDemoCoreData.xcdatamodeld */; };
-		6250F1EC206F852D00CA4662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6250F1EB206F852D00CA4662 /* Assets.xcassets */; };
-		6250F1EF206F852D00CA4662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6250F1ED206F852D00CA4662 /* LaunchScreen.storyboard */; };
-		6250F1F2206F852D00CA4662 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250F1F1206F852D00CA4662 /* main.m */; };
-		6250F1FC206F852D00CA4662 /* ContactDemoCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250F1FB206F852D00CA4662 /* ContactDemoCoreDataTests.m */; };
-		6250F207206F852D00CA4662 /* ContactDemoCoreDataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250F206206F852D00CA4662 /* ContactDemoCoreDataUITests.m */; };
-		6250F224206F9D0200CA4662 /* PersonManagedObject+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250F222206F9D0200CA4662 /* PersonManagedObject+CoreDataClass.m */; };
-		6250F225206F9D0200CA4662 /* PersonManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6250F223206F9D0200CA4662 /* PersonManagedObject+CoreDataProperties.m */; };
+		6204724A2072426900EA05F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 620472492072426900EA05F7 /* AppDelegate.m */; };
+		6204724D2072426900EA05F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6204724C2072426900EA05F7 /* ViewController.m */; };
+		620472502072426900EA05F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6204724E2072426900EA05F7 /* Main.storyboard */; };
+		620472532072426900EA05F7 /* ContactDemoCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 620472512072426900EA05F7 /* ContactDemoCoreData.xcdatamodeld */; };
+		620472552072426A00EA05F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 620472542072426A00EA05F7 /* Assets.xcassets */; };
+		620472582072426A00EA05F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 620472562072426A00EA05F7 /* LaunchScreen.storyboard */; };
+		6204725B2072426A00EA05F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6204725A2072426A00EA05F7 /* main.m */; };
+		620472652072426A00EA05F7 /* ContactDemoCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 620472642072426A00EA05F7 /* ContactDemoCoreDataTests.m */; };
+		620472702072426A00EA05F7 /* ContactDemoCoreDataUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6204726F2072426A00EA05F7 /* ContactDemoCoreDataUITests.m */; };
+		620472872072454000EA05F7 /* PersonManagedObject+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 620472852072454000EA05F7 /* PersonManagedObject+CoreDataClass.m */; };
+		620472882072454000EA05F7 /* PersonManagedObject+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 620472862072454000EA05F7 /* PersonManagedObject+CoreDataProperties.m */; };
+		6204728D2072463200EA05F7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 620472892072463200EA05F7 /* DetailViewController.m */; };
+		6204728E2072463200EA05F7 /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6204728A2072463200EA05F7 /* AddContactViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6250F1F8206F852D00CA4662 /* PBXContainerItemProxy */ = {
+		620472612072426A00EA05F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6250F1D4206F852B00CA4662 /* Project object */;
+			containerPortal = 6204723D2072426900EA05F7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6250F1DB206F852B00CA4662;
-			remoteInfo = ContactDemoCoreData;
+			remoteGlobalIDString = 620472442072426900EA05F7;
+			remoteInfo = FUCK;
 		};
-		6250F203206F852D00CA4662 /* PBXContainerItemProxy */ = {
+		6204726C2072426A00EA05F7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6250F1D4206F852B00CA4662 /* Project object */;
+			containerPortal = 6204723D2072426900EA05F7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6250F1DB206F852B00CA4662;
-			remoteInfo = ContactDemoCoreData;
+			remoteGlobalIDString = 620472442072426900EA05F7;
+			remoteInfo = FUCK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5EDC62DDCE716170E9390481 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		5EDC6C151C79C4296F1FDB0A /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		6250F1DC206F852B00CA4662 /* ContactDemoCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactDemoCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6250F1DF206F852B00CA4662 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6250F1E0206F852B00CA4662 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6250F1E2206F852B00CA4662 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6250F1E3206F852B00CA4662 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6250F1E6206F852B00CA4662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6250F1E9206F852B00CA4662 /* ContactDemoCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactDemoCoreData.xcdatamodel; sourceTree = "<group>"; };
-		6250F1EB206F852D00CA4662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6250F1EE206F852D00CA4662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6250F1F0206F852D00CA4662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6250F1F1206F852D00CA4662 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6250F1F7206F852D00CA4662 /* ContactDemoCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactDemoCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6250F1FB206F852D00CA4662 /* ContactDemoCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDemoCoreDataTests.m; sourceTree = "<group>"; };
-		6250F1FD206F852D00CA4662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6250F202206F852D00CA4662 /* ContactDemoCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactDemoCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6250F206206F852D00CA4662 /* ContactDemoCoreDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDemoCoreDataUITests.m; sourceTree = "<group>"; };
-		6250F208206F852D00CA4662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6250F220206F9D0200CA4662 /* PersonManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonManagedObject+CoreDataProperties.h"; sourceTree = "<group>"; };
-		6250F221206F9D0200CA4662 /* PersonManagedObject+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonManagedObject+CoreDataClass.h"; sourceTree = "<group>"; };
-		6250F222206F9D0200CA4662 /* PersonManagedObject+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PersonManagedObject+CoreDataClass.m"; sourceTree = "<group>"; };
-		6250F223206F9D0200CA4662 /* PersonManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PersonManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		620472452072426900EA05F7 /* ContactDemoCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactDemoCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		620472482072426900EA05F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		620472492072426900EA05F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6204724B2072426900EA05F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6204724C2072426900EA05F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6204724F2072426900EA05F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		620472522072426900EA05F7 /* FUCK.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FUCK.xcdatamodel; sourceTree = "<group>"; };
+		620472542072426A00EA05F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		620472572072426A00EA05F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		620472592072426A00EA05F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "/Users/houlx/Desktop/FUCK 2/ContactDemoCoreData/Info.plist"; sourceTree = "<absolute>"; };
+		6204725A2072426A00EA05F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		620472602072426A00EA05F7 /* ContactDemoCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactDemoCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		620472642072426A00EA05F7 /* ContactDemoCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDemoCoreDataTests.m; sourceTree = "<group>"; };
+		620472662072426A00EA05F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6204726B2072426A00EA05F7 /* ContactDemoCoreDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactDemoCoreDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6204726F2072426A00EA05F7 /* ContactDemoCoreDataUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDemoCoreDataUITests.m; sourceTree = "<group>"; };
+		620472712072426A00EA05F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		620472832072454000EA05F7 /* PersonManagedObject+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonManagedObject+CoreDataProperties.h"; sourceTree = "<group>"; };
+		620472842072454000EA05F7 /* PersonManagedObject+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonManagedObject+CoreDataClass.h"; sourceTree = "<group>"; };
+		620472852072454000EA05F7 /* PersonManagedObject+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PersonManagedObject+CoreDataClass.m"; sourceTree = "<group>"; };
+		620472862072454000EA05F7 /* PersonManagedObject+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PersonManagedObject+CoreDataProperties.m"; sourceTree = "<group>"; };
+		620472892072463200EA05F7 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		6204728A2072463200EA05F7 /* AddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
+		6204728B2072463200EA05F7 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		6204728C2072463200EA05F7 /* AddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6250F1D9206F852B00CA4662 /* Frameworks */ = {
+		620472422072426900EA05F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6250F1F4206F852D00CA4662 /* Frameworks */ = {
+		6204725D2072426A00EA05F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6250F1FF206F852D00CA4662 /* Frameworks */ = {
+		620472682072426A00EA05F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,63 +92,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6250F1D3206F852B00CA4662 = {
+		6204723C2072426900EA05F7 = {
 			isa = PBXGroup;
 			children = (
-				6250F1DE206F852B00CA4662 /* ContactDemoCoreData */,
-				6250F1FA206F852D00CA4662 /* ContactDemoCoreDataTests */,
-				6250F205206F852D00CA4662 /* ContactDemoCoreDataUITests */,
-				6250F1DD206F852B00CA4662 /* Products */,
+				620472472072426900EA05F7 /* ContactDemoCoreData */,
+				620472632072426A00EA05F7 /* ContactDemoCoreDataTests */,
+				6204726E2072426A00EA05F7 /* ContactDemoCoreDataUITests */,
+				620472462072426900EA05F7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6250F1DD206F852B00CA4662 /* Products */ = {
+		620472462072426900EA05F7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6250F1DC206F852B00CA4662 /* ContactDemoCoreData.app */,
-				6250F1F7206F852D00CA4662 /* ContactDemoCoreDataTests.xctest */,
-				6250F202206F852D00CA4662 /* ContactDemoCoreDataUITests.xctest */,
+				620472452072426900EA05F7 /* ContactDemoCoreData.app */,
+				620472602072426A00EA05F7 /* ContactDemoCoreDataTests.xctest */,
+				6204726B2072426A00EA05F7 /* ContactDemoCoreDataUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6250F1DE206F852B00CA4662 /* ContactDemoCoreData */ = {
+		620472472072426900EA05F7 /* ContactDemoCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				6250F220206F9D0200CA4662 /* PersonManagedObject+CoreDataProperties.h */,
-				6250F221206F9D0200CA4662 /* PersonManagedObject+CoreDataClass.h */,
-				6250F222206F9D0200CA4662 /* PersonManagedObject+CoreDataClass.m */,
-				6250F223206F9D0200CA4662 /* PersonManagedObject+CoreDataProperties.m */,
-				6250F1DF206F852B00CA4662 /* AppDelegate.h */,
-				6250F1E0206F852B00CA4662 /* AppDelegate.m */,
-				6250F1E2206F852B00CA4662 /* ViewController.h */,
-				6250F1E3206F852B00CA4662 /* ViewController.m */,
-				6250F1E5206F852B00CA4662 /* Main.storyboard */,
-				6250F1EB206F852D00CA4662 /* Assets.xcassets */,
-				6250F1ED206F852D00CA4662 /* LaunchScreen.storyboard */,
-				6250F1F0206F852D00CA4662 /* Info.plist */,
-				6250F1F1206F852D00CA4662 /* main.m */,
-				6250F1E8206F852B00CA4662 /* ContactDemoCoreData.xcdatamodeld */,
-				5EDC6C151C79C4296F1FDB0A /* DetailViewController.h */,
-				5EDC62DDCE716170E9390481 /* DetailViewController.m */,
+				6204728C2072463200EA05F7 /* AddContactViewController.h */,
+				6204728A2072463200EA05F7 /* AddContactViewController.m */,
+				6204728B2072463200EA05F7 /* DetailViewController.h */,
+				620472892072463200EA05F7 /* DetailViewController.m */,
+				620472832072454000EA05F7 /* PersonManagedObject+CoreDataProperties.h */,
+				620472842072454000EA05F7 /* PersonManagedObject+CoreDataClass.h */,
+				620472852072454000EA05F7 /* PersonManagedObject+CoreDataClass.m */,
+				620472862072454000EA05F7 /* PersonManagedObject+CoreDataProperties.m */,
+				620472482072426900EA05F7 /* AppDelegate.h */,
+				620472492072426900EA05F7 /* AppDelegate.m */,
+				6204724B2072426900EA05F7 /* ViewController.h */,
+				6204724C2072426900EA05F7 /* ViewController.m */,
+				6204724E2072426900EA05F7 /* Main.storyboard */,
+				620472542072426A00EA05F7 /* Assets.xcassets */,
+				620472562072426A00EA05F7 /* LaunchScreen.storyboard */,
+				620472592072426A00EA05F7 /* Info.plist */,
+				6204725A2072426A00EA05F7 /* main.m */,
+				620472512072426900EA05F7 /* ContactDemoCoreData.xcdatamodeld */,
 			);
 			path = ContactDemoCoreData;
 			sourceTree = "<group>";
 		};
-		6250F1FA206F852D00CA4662 /* ContactDemoCoreDataTests */ = {
+		620472632072426A00EA05F7 /* ContactDemoCoreDataTests */ = {
 			isa = PBXGroup;
 			children = (
-				6250F1FB206F852D00CA4662 /* ContactDemoCoreDataTests.m */,
-				6250F1FD206F852D00CA4662 /* Info.plist */,
+				620472642072426A00EA05F7 /* ContactDemoCoreDataTests.m */,
+				620472662072426A00EA05F7 /* Info.plist */,
 			);
 			path = ContactDemoCoreDataTests;
 			sourceTree = "<group>";
 		};
-		6250F205206F852D00CA4662 /* ContactDemoCoreDataUITests */ = {
+		6204726E2072426A00EA05F7 /* ContactDemoCoreDataUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6250F206206F852D00CA4662 /* ContactDemoCoreDataUITests.m */,
-				6250F208206F852D00CA4662 /* Info.plist */,
+				6204726F2072426A00EA05F7 /* ContactDemoCoreDataUITests.m */,
+				620472712072426A00EA05F7 /* Info.plist */,
 			);
 			path = ContactDemoCoreDataUITests;
 			sourceTree = "<group>";
@@ -153,82 +158,82 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6250F1DB206F852B00CA4662 /* ContactDemoCoreData */ = {
+		620472442072426900EA05F7 /* ContactDemoCoreData */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6250F20B206F852D00CA4662 /* Build configuration list for PBXNativeTarget "ContactDemoCoreData" */;
+			buildConfigurationList = 620472742072426A00EA05F7 /* Build configuration list for PBXNativeTarget "ContactDemoCoreData" */;
 			buildPhases = (
-				6250F1D8206F852B00CA4662 /* Sources */,
-				6250F1D9206F852B00CA4662 /* Frameworks */,
-				6250F1DA206F852B00CA4662 /* Resources */,
+				620472412072426900EA05F7 /* Sources */,
+				620472422072426900EA05F7 /* Frameworks */,
+				620472432072426900EA05F7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ContactDemoCoreData;
-			productName = ContactDemoCoreData;
-			productReference = 6250F1DC206F852B00CA4662 /* ContactDemoCoreData.app */;
+			productName = FUCK;
+			productReference = 620472452072426900EA05F7 /* ContactDemoCoreData.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6250F1F6206F852D00CA4662 /* ContactDemoCoreDataTests */ = {
+		6204725F2072426A00EA05F7 /* ContactDemoCoreDataTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6250F20E206F852D00CA4662 /* Build configuration list for PBXNativeTarget "ContactDemoCoreDataTests" */;
+			buildConfigurationList = 620472772072426A00EA05F7 /* Build configuration list for PBXNativeTarget "ContactDemoCoreDataTests" */;
 			buildPhases = (
-				6250F1F3206F852D00CA4662 /* Sources */,
-				6250F1F4206F852D00CA4662 /* Frameworks */,
-				6250F1F5206F852D00CA4662 /* Resources */,
+				6204725C2072426A00EA05F7 /* Sources */,
+				6204725D2072426A00EA05F7 /* Frameworks */,
+				6204725E2072426A00EA05F7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6250F1F9206F852D00CA4662 /* PBXTargetDependency */,
+				620472622072426A00EA05F7 /* PBXTargetDependency */,
 			);
 			name = ContactDemoCoreDataTests;
-			productName = ContactDemoCoreDataTests;
-			productReference = 6250F1F7206F852D00CA4662 /* ContactDemoCoreDataTests.xctest */;
+			productName = FUCKTests;
+			productReference = 620472602072426A00EA05F7 /* ContactDemoCoreDataTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6250F201206F852D00CA4662 /* ContactDemoCoreDataUITests */ = {
+		6204726A2072426A00EA05F7 /* ContactDemoCoreDataUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6250F211206F852D00CA4662 /* Build configuration list for PBXNativeTarget "ContactDemoCoreDataUITests" */;
+			buildConfigurationList = 6204727A2072426A00EA05F7 /* Build configuration list for PBXNativeTarget "ContactDemoCoreDataUITests" */;
 			buildPhases = (
-				6250F1FE206F852D00CA4662 /* Sources */,
-				6250F1FF206F852D00CA4662 /* Frameworks */,
-				6250F200206F852D00CA4662 /* Resources */,
+				620472672072426A00EA05F7 /* Sources */,
+				620472682072426A00EA05F7 /* Frameworks */,
+				620472692072426A00EA05F7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6250F204206F852D00CA4662 /* PBXTargetDependency */,
+				6204726D2072426A00EA05F7 /* PBXTargetDependency */,
 			);
 			name = ContactDemoCoreDataUITests;
-			productName = ContactDemoCoreDataUITests;
-			productReference = 6250F202206F852D00CA4662 /* ContactDemoCoreDataUITests.xctest */;
+			productName = FUCKUITests;
+			productReference = 6204726B2072426A00EA05F7 /* ContactDemoCoreDataUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6250F1D4206F852B00CA4662 /* Project object */ = {
+		6204723D2072426900EA05F7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = houlx.ssdut;
 				TargetAttributes = {
-					6250F1DB206F852B00CA4662 = {
+					620472442072426900EA05F7 = {
 						CreatedOnToolsVersion = 9.3;
 					};
-					6250F1F6206F852D00CA4662 = {
+					6204725F2072426A00EA05F7 = {
 						CreatedOnToolsVersion = 9.3;
-						TestTargetID = 6250F1DB206F852B00CA4662;
+						TestTargetID = 620472442072426900EA05F7;
 					};
-					6250F201206F852D00CA4662 = {
+					6204726A2072426A00EA05F7 = {
 						CreatedOnToolsVersion = 9.3;
-						TestTargetID = 6250F1DB206F852B00CA4662;
+						TestTargetID = 620472442072426900EA05F7;
 					};
 				};
 			};
-			buildConfigurationList = 6250F1D7206F852B00CA4662 /* Build configuration list for PBXProject "ContactDemoCoreData" */;
+			buildConfigurationList = 620472402072426900EA05F7 /* Build configuration list for PBXProject "ContactDemoCoreData" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -236,37 +241,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 6250F1D3206F852B00CA4662;
-			productRefGroup = 6250F1DD206F852B00CA4662 /* Products */;
+			mainGroup = 6204723C2072426900EA05F7;
+			productRefGroup = 620472462072426900EA05F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6250F1DB206F852B00CA4662 /* ContactDemoCoreData */,
-				6250F1F6206F852D00CA4662 /* ContactDemoCoreDataTests */,
-				6250F201206F852D00CA4662 /* ContactDemoCoreDataUITests */,
+				620472442072426900EA05F7 /* ContactDemoCoreData */,
+				6204725F2072426A00EA05F7 /* ContactDemoCoreDataTests */,
+				6204726A2072426A00EA05F7 /* ContactDemoCoreDataUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6250F1DA206F852B00CA4662 /* Resources */ = {
+		620472432072426900EA05F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6250F1EF206F852D00CA4662 /* LaunchScreen.storyboard in Resources */,
-				6250F1EC206F852D00CA4662 /* Assets.xcassets in Resources */,
-				6250F1E7206F852B00CA4662 /* Main.storyboard in Resources */,
+				620472582072426A00EA05F7 /* LaunchScreen.storyboard in Resources */,
+				620472552072426A00EA05F7 /* Assets.xcassets in Resources */,
+				620472502072426900EA05F7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6250F1F5206F852D00CA4662 /* Resources */ = {
+		6204725E2072426A00EA05F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6250F200206F852D00CA4662 /* Resources */ = {
+		620472692072426A00EA05F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -276,64 +281,65 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6250F1D8206F852B00CA4662 /* Sources */ = {
+		620472412072426900EA05F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6250F1EA206F852B00CA4662 /* ContactDemoCoreData.xcdatamodeld in Sources */,
-				6250F1E4206F852B00CA4662 /* ViewController.m in Sources */,
-				6250F1F2206F852D00CA4662 /* main.m in Sources */,
-				6250F225206F9D0200CA4662 /* PersonManagedObject+CoreDataProperties.m in Sources */,
-				6250F224206F9D0200CA4662 /* PersonManagedObject+CoreDataClass.m in Sources */,
-				6250F1E1206F852B00CA4662 /* AppDelegate.m in Sources */,
-				5EDC61BB749B6BE3B563CFA7 /* DetailViewController.m in Sources */,
+				6204724D2072426900EA05F7 /* ViewController.m in Sources */,
+				6204728E2072463200EA05F7 /* AddContactViewController.m in Sources */,
+				620472532072426900EA05F7 /* ContactDemoCoreData.xcdatamodeld in Sources */,
+				6204725B2072426A00EA05F7 /* main.m in Sources */,
+				620472882072454000EA05F7 /* PersonManagedObject+CoreDataProperties.m in Sources */,
+				620472872072454000EA05F7 /* PersonManagedObject+CoreDataClass.m in Sources */,
+				6204724A2072426900EA05F7 /* AppDelegate.m in Sources */,
+				6204728D2072463200EA05F7 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6250F1F3206F852D00CA4662 /* Sources */ = {
+		6204725C2072426A00EA05F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6250F1FC206F852D00CA4662 /* ContactDemoCoreDataTests.m in Sources */,
+				620472652072426A00EA05F7 /* ContactDemoCoreDataTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6250F1FE206F852D00CA4662 /* Sources */ = {
+		620472672072426A00EA05F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6250F207206F852D00CA4662 /* ContactDemoCoreDataUITests.m in Sources */,
+				620472702072426A00EA05F7 /* ContactDemoCoreDataUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6250F1F9206F852D00CA4662 /* PBXTargetDependency */ = {
+		620472622072426A00EA05F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6250F1DB206F852B00CA4662 /* ContactDemoCoreData */;
-			targetProxy = 6250F1F8206F852D00CA4662 /* PBXContainerItemProxy */;
+			target = 620472442072426900EA05F7 /* ContactDemoCoreData */;
+			targetProxy = 620472612072426A00EA05F7 /* PBXContainerItemProxy */;
 		};
-		6250F204206F852D00CA4662 /* PBXTargetDependency */ = {
+		6204726D2072426A00EA05F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6250F1DB206F852B00CA4662 /* ContactDemoCoreData */;
-			targetProxy = 6250F203206F852D00CA4662 /* PBXContainerItemProxy */;
+			target = 620472442072426900EA05F7 /* ContactDemoCoreData */;
+			targetProxy = 6204726C2072426A00EA05F7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6250F1E5206F852B00CA4662 /* Main.storyboard */ = {
+		6204724E2072426900EA05F7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6250F1E6206F852B00CA4662 /* Base */,
+				6204724F2072426900EA05F7 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6250F1ED206F852D00CA4662 /* LaunchScreen.storyboard */ = {
+		620472562072426A00EA05F7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6250F1EE206F852D00CA4662 /* Base */,
+				620472572072426A00EA05F7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -341,7 +347,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6250F209206F852D00CA4662 /* Debug */ = {
+		620472722072426A00EA05F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -399,7 +405,7 @@
 			};
 			name = Debug;
 		};
-		6250F20A206F852D00CA4662 /* Release */ = {
+		620472732072426A00EA05F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -451,7 +457,7 @@
 			};
 			name = Release;
 		};
-		6250F20C206F852D00CA4662 /* Debug */ = {
+		620472752072426A00EA05F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -468,7 +474,7 @@
 			};
 			name = Debug;
 		};
-		6250F20D206F852D00CA4662 /* Release */ = {
+		620472762072426A00EA05F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -485,115 +491,115 @@
 			};
 			name = Release;
 		};
-		6250F20F206F852D00CA4662 /* Debug */ = {
+		620472782072426A00EA05F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UD4PDXT9JQ;
-				INFOPLIST_FILE = ContactDemoCoreDataTests/Info.plist;
+				INFOPLIST_FILE = FUCKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hou.ContactDemoCoreDataTests;
+				PRODUCT_BUNDLE_IDENTIFIER = hou.FUCKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactDemoCoreData.app/ContactDemoCoreData";
 			};
 			name = Debug;
 		};
-		6250F210206F852D00CA4662 /* Release */ = {
+		620472792072426A00EA05F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UD4PDXT9JQ;
-				INFOPLIST_FILE = ContactDemoCoreDataTests/Info.plist;
+				INFOPLIST_FILE = FUCKTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hou.ContactDemoCoreDataTests;
+				PRODUCT_BUNDLE_IDENTIFIER = hou.FUCKTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContactDemoCoreData.app/ContactDemoCoreData";
 			};
 			name = Release;
 		};
-		6250F212206F852D00CA4662 /* Debug */ = {
+		6204727B2072426A00EA05F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UD4PDXT9JQ;
-				INFOPLIST_FILE = ContactDemoCoreDataUITests/Info.plist;
+				INFOPLIST_FILE = FUCKUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hou.ContactDemoCoreDataUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = hou.FUCKUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ContactDemoCoreData;
+				TEST_TARGET_NAME = FUCK;
 			};
 			name = Debug;
 		};
-		6250F213206F852D00CA4662 /* Release */ = {
+		6204727C2072426A00EA05F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UD4PDXT9JQ;
-				INFOPLIST_FILE = ContactDemoCoreDataUITests/Info.plist;
+				INFOPLIST_FILE = FUCKUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = hou.ContactDemoCoreDataUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = hou.FUCKUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ContactDemoCoreData;
+				TEST_TARGET_NAME = FUCK;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6250F1D7206F852B00CA4662 /* Build configuration list for PBXProject "ContactDemoCoreData" */ = {
+		620472402072426900EA05F7 /* Build configuration list for PBXProject "ContactDemoCoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6250F209206F852D00CA4662 /* Debug */,
-				6250F20A206F852D00CA4662 /* Release */,
+				620472722072426A00EA05F7 /* Debug */,
+				620472732072426A00EA05F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6250F20B206F852D00CA4662 /* Build configuration list for PBXNativeTarget "ContactDemoCoreData" */ = {
+		620472742072426A00EA05F7 /* Build configuration list for PBXNativeTarget "ContactDemoCoreData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6250F20C206F852D00CA4662 /* Debug */,
-				6250F20D206F852D00CA4662 /* Release */,
+				620472752072426A00EA05F7 /* Debug */,
+				620472762072426A00EA05F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6250F20E206F852D00CA4662 /* Build configuration list for PBXNativeTarget "ContactDemoCoreDataTests" */ = {
+		620472772072426A00EA05F7 /* Build configuration list for PBXNativeTarget "ContactDemoCoreDataTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6250F20F206F852D00CA4662 /* Debug */,
-				6250F210206F852D00CA4662 /* Release */,
+				620472782072426A00EA05F7 /* Debug */,
+				620472792072426A00EA05F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6250F211206F852D00CA4662 /* Build configuration list for PBXNativeTarget "ContactDemoCoreDataUITests" */ = {
+		6204727A2072426A00EA05F7 /* Build configuration list for PBXNativeTarget "ContactDemoCoreDataUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6250F212206F852D00CA4662 /* Debug */,
-				6250F213206F852D00CA4662 /* Release */,
+				6204727B2072426A00EA05F7 /* Debug */,
+				6204727C2072426A00EA05F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -601,17 +607,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		6250F1E8206F852B00CA4662 /* ContactDemoCoreData.xcdatamodeld */ = {
+		620472512072426900EA05F7 /* ContactDemoCoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				6250F1E9206F852B00CA4662 /* ContactDemoCoreData.xcdatamodel */,
+				620472522072426900EA05F7 /* FUCK.xcdatamodel */,
 			);
-			currentVersion = 6250F1E9206F852B00CA4662 /* ContactDemoCoreData.xcdatamodel */;
+			currentVersion = 620472522072426900EA05F7 /* FUCK.xcdatamodel */;
 			path = ContactDemoCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 6250F1D4206F852B00CA4662 /* Project object */;
+	rootObject = 6204723D2072426900EA05F7 /* Project object */;
 }

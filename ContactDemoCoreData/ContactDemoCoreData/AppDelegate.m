@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  ContactDemoCoreData
+//  
 //
-//  Created by 侯凌霄 on 2018/3/31.
+//  Created by 侯凌霄 on 2018/4/2.
 //  Copyright © 2018年 houlx.ssdut. All rights reserved.
 //
 
@@ -65,12 +65,12 @@
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"ContactDemoCoreData"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"FUCK"];
             [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.
                     // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-
+                    
                     /*
                      Typical reasons for an error here include:
                      * The parent directory does not exist, cannot be created, or disallows writing.
@@ -85,7 +85,7 @@
             }];
         }
     }
-
+    
     return _persistentContainer;
 }
 
