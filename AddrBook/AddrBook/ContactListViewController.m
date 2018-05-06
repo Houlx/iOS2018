@@ -44,30 +44,13 @@
 //        self.listFilterContact = self.listContact;
         self.listFilterContact = [NSMutableArray arrayWithArray:self.listContact];
     } else {
-//        for (Contact *contact in self.listContact) {
-////            if ([contact.name hasPrefix:searchText]) {
-////                [self.listFilterContact addObject:contact];
-////            }
-//            NSRange text = [contact.name rangeOfString:searchText options:NSCaseInsensitiveSearch];
-//            if (text.location != NSNotFound) {
-//                [self.listFilterContact addObject:contact];
-//            }
-//        }
         [self.listFilterContact removeAllObjects];
         [self.listContact enumerateObjectsUsingBlock:^(Contact *contact, NSUInteger index, BOOL *stop) {
             if ([contact.name rangeOfString:searchText options:NSCaseInsensitiveSearch].location != NSNotFound) {
-                *stop = YES;
-                if (*stop == YES) {
                     [self.listFilterContact addObject:contact];
-                }
-
             }
-
         }];
     }
-//    for (Contact *contact1 in self.listContact) {
-//        NSLog(@"%@", contact1.name);
-//    }
     [self.tableView reloadData];
 }
 
