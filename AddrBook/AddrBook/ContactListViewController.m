@@ -35,10 +35,12 @@
 }
 
 - (void)searchTable {
-    [self.listContact removeAllObjects];
+//    [self.listContact removeAllObjects];
     BmobQuery *query = [BmobQuery queryWithClassName:@"Contact"];
-    [query orderByDescending:@"name"];
+//    [query orderByDescending:@"name"];
+    query.cachePolicy = kBmobCachePolicyCacheThenNetwork;
     [query findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+        [self.listContact removeAllObjects];
         for (BmobObject *object in array) {
             Contact *contact = [[Contact alloc] init];
             contact.name = [object objectForKey:@"name"];
