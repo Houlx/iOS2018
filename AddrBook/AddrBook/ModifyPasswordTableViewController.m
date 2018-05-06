@@ -1,29 +1,44 @@
 //
-//  MeTableViewController.m
+//  ModifyPasswordTableViewController.m
 //  AddrBook
 //
-//  Created by 侯凌霄 on 2018/5/5.
+//  Created by 侯凌霄 on 2018/5/6.
 //  Copyright © 2018年 houlx.ssdut. All rights reserved.
 //
 
-#import "MeTableViewController.h"
+#import "ModifyPasswordTableViewController.h"
 
-@interface MeTableViewController ()
-@property(weak, nonatomic) IBOutlet UILabel *username;
-
+@interface ModifyPasswordTableViewController () <UITextFieldDelegate>
 
 @end
 
-@implementation MeTableViewController
-- (IBAction)onFeedbackClick:(id)sender {
-    NSString *webUrl = @"https://github.com/Houlx/iOS2018/issues/new";
-    NSURL *url = [NSURL URLWithString:webUrl];
-    [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
-}
-
-- (IBAction)onLogOutClick:(id)sender {
-    [self performSegueWithIdentifier:@"logout" sender:self];
-    [BmobUser logout];
+@implementation ModifyPasswordTableViewController
+- (IBAction)saveNewPassword:(id)sender {
+    BmobUser *user = [BmobUser currentUser];
+    if ([self.changePassword.text isEqualToString:self.confirmNewPassword.text]) {
+        [user updateCurrentUserPasswordWithOldPassword:self.oldPassword.text newPassword:self.changePassword.text block:^(BOOL isSuccessful, NSError *error) {
+            if (isSuccessful) {
+                [BmobUser loginInbackgroundWithAccount:[user username] andPassword:self.changePassword.text block:^(BmobUser *user, NSError *error) {
+                    if (error) {
+                        NSLog(@"login error:%@", error);
+                    } else {
+                        [self dismissViewControllerAnimated:TRUE completion:nil];
+                        NSLog(@"user:%@", user);
+                    }
+                }];
+            } else {
+                UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Wrong Old Password" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *OKAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+                [alertController addAction:OKAction];
+                [self presentViewController:alertController animated:true completion:nil];
+            }
+        }];
+    } else {
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"两次输入新密码不一致" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *OKAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleCancel handler:nil];
+        [alertController addAction:OKAction];
+        [self presentViewController:alertController animated:true completion:nil];
+    }
 }
 
 - (void)viewDidLoad {
@@ -34,13 +49,6 @@
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-//    self.username.text = [[BmobUser currentUser] username];
-//    if ([[BmobUser currentUser] email] == nil) {
-//        self.username.text = [[BmobUser currentUser] objectId];
-//    } else {
-//        self.username.text = [[BmobUser currentUser] email];
-//    }
-    self.username.text = [[BmobUser currentUser] username];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,12 +56,12 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)backToMeSegue:(UIStoryboardSegue *)sender {
-//    NSLog(@"unwindSegue %@", sender);
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    return YES;
 }
 
 #pragma mark - Table view data source
-//
+
 //- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 //#warning Incomplete implementation, return the number of sections
 //    return 0;

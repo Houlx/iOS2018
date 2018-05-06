@@ -8,13 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RegisterViewController : UIViewController
+@interface RegisterViewController : UITableViewController
 
 @property(weak, nonatomic) IBOutlet UITextField *username;
 @property(weak, nonatomic) IBOutlet UITextField *password;
 
 - (IBAction)save:(id)sender;
-
-- (IBAction)cancel:(id)sender;
 
 @end

@@ -31,6 +31,7 @@
     self.listContact = [NSMutableArray array];
     [self searchTable];
     self.listFilterContact = [NSMutableArray arrayWithArray:self.listContact];
+
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
@@ -46,7 +47,7 @@
         [self.listFilterContact removeAllObjects];
         [self.listContact enumerateObjectsUsingBlock:^(Contact *contact, NSUInteger index, BOOL *stop) {
             if ([contact.name rangeOfString:searchText options:NSCaseInsensitiveSearch].location != NSNotFound) {
-                    [self.listFilterContact addObject:contact];
+                [self.listFilterContact addObject:contact];
             }
         }];
     }

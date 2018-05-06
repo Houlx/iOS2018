@@ -24,6 +24,7 @@
 		62AC66D6209DFB39003874CE /* Contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62AC66D5209DFB39003874CE /* Contacts.plist */; };
 		62AC66D9209EB353003874CE /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AC66D8209EB353003874CE /* Contact.m */; };
 		62AC66DC209EDCF3003874CE /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AC66DB209EDCF3003874CE /* DetailTableViewController.m */; };
+		62AC66E2209F4751003874CE /* ModifyPasswordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AC66E1209F4751003874CE /* ModifyPasswordTableViewController.m */; };
 		B59CFF3FB7F0BACCB5342618 /* libPods-AddrBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1233C02A9B0F73B25CA5B5AA /* libPods-AddrBook.a */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,8 @@
 		62AC66D8209EB353003874CE /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		62AC66DA209EDCF3003874CE /* DetailTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
 		62AC66DB209EDCF3003874CE /* DetailTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
+		62AC66E0209F4751003874CE /* ModifyPasswordTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModifyPasswordTableViewController.h; sourceTree = "<group>"; };
+		62AC66E1209F4751003874CE /* ModifyPasswordTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModifyPasswordTableViewController.m; sourceTree = "<group>"; };
 		E533E42C61D6C843C69860C4 /* Pods-AddrBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddrBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AddrBook/Pods-AddrBook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -162,6 +165,8 @@
 				62AC66D8209EB353003874CE /* Contact.m */,
 				62AC66DA209EDCF3003874CE /* DetailTableViewController.h */,
 				62AC66DB209EDCF3003874CE /* DetailTableViewController.m */,
+				62AC66E0209F4751003874CE /* ModifyPasswordTableViewController.h */,
+				62AC66E1209F4751003874CE /* ModifyPasswordTableViewController.m */,
 			);
 			path = AddrBook;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 				62AC66DC209EDCF3003874CE /* DetailTableViewController.m in Sources */,
 				628E0ED1209C38540099B977 /* ViewController.m in Sources */,
 				628E0EDF209C38550099B977 /* main.m in Sources */,
+				62AC66E2209F4751003874CE /* ModifyPasswordTableViewController.m in Sources */,
 				62AC66D1209C5F51003874CE /* RegisterViewController.m in Sources */,
 				62AC66D4209D8383003874CE /* MeTableViewController.m in Sources */,
 				628E0ECE209C38540099B977 /* AppDelegate.m in Sources */,

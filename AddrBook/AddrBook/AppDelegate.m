@@ -19,15 +19,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    BmobUser *localUser = [BmobUser currentUser];
-//    if (!localUser) {
-//        ContactListViewController *contactListViewController = [[ContactListViewController alloc] init];
-//        self.window.rootViewController = contactListViewController;
-//    }
     BmobQuery *query = [BmobQuery queryWithClassName:@"Contact"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         for (BmobObject *object in array) {
-//            NSLog(@"%@", [object objectForKey:@"name"]);
             [self.listName addObject:[object objectForKey:@"name"]];
         }
     }];

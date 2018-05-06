@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,11 +46,11 @@
     }];
 }
 
-- (IBAction)cancel:(id)sender {
-    [self dismissViewControllerAnimated:TRUE completion:^{
-
-    }];
-}
+//- (IBAction)cancel:(id)sender {
+//    [self dismissViewControllerAnimated:TRUE completion:^{
+//
+//    }];
+//}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     return YES;
