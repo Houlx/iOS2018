@@ -41,7 +41,6 @@
 
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
     if ([searchText isEqualToString:@""]) {
-//        self.listFilterContact = self.listContact;
         self.listFilterContact = [NSMutableArray arrayWithArray:self.listContact];
     } else {
         [self.listFilterContact removeAllObjects];
@@ -64,9 +63,7 @@
 }
 
 - (void)searchTable {
-//    [self.listContact removeAllObjects];
     BmobQuery *query = [BmobQuery queryWithClassName:@"Contact"];
-//    [query orderByDescending:@"name"];
     query.cachePolicy = kBmobCachePolicyCacheThenNetwork;
     [query findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         [self.listContact removeAllObjects];
@@ -108,7 +105,7 @@
         NSInteger selectedIndex = indexPath.row;
 
         DetailTableViewController *detailTableViewController = segue.destinationViewController;
-        Contact *selectedContact = self.listContact[(NSUInteger) selectedIndex];
+        Contact *selectedContact = self.listFilterContact[(NSUInteger) selectedIndex];
         detailTableViewController.contact = selectedContact;
         detailTableViewController.title = selectedContact.name;
     }
