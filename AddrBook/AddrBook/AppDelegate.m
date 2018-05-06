@@ -2,11 +2,14 @@
 //  AppDelegate.m
 //  AddrBook
 //
-//  Created by 侯凌霄 on 2018/5/3.
+//  Created by 侯凌霄 on 2018/5/4.
 //  Copyright © 2018年 houlx.ssdut. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import <BmobSDK/BmobUser.h>
+#import "ContactListViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -16,7 +19,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+//    BmobUser *localUser = [BmobUser currentUser];
+//    if (!localUser) {
+//        ContactListViewController *contactListViewController = [[ContactListViewController alloc] init];
+//        self.window.rootViewController = contactListViewController;
+//    }
+    BmobQuery *query = [BmobQuery queryWithClassName:@"Contact"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+        for (BmobObject *object in array) {
+//            NSLog(@"%@", [object objectForKey:@"name"]);
+            [self.listName addObject:[object objectForKey:@"name"]];
+        }
+    }];
     return YES;
 }
 
@@ -63,7 +77,7 @@
                 if (error != nil) {
                     // Replace this implementation with code to handle the error appropriately.
                     // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                    
+
                     /*
                      Typical reasons for an error here include:
                      * The parent directory does not exist, cannot be created, or disallows writing.
@@ -78,7 +92,7 @@
             }];
         }
     }
-    
+
     return _persistentContainer;
 }
 

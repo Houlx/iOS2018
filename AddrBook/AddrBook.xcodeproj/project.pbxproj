@@ -7,77 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		62F5899A209B126400D4C257 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F58999209B126400D4C257 /* AppDelegate.m */; };
-		62F5899D209B126400D4C257 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F5899C209B126400D4C257 /* ViewController.m */; };
-		62F589A0209B126400D4C257 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F5899E209B126400D4C257 /* Main.storyboard */; };
-		62F589A3209B126400D4C257 /* AddrBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 62F589A1209B126400D4C257 /* AddrBook.xcdatamodeld */; };
-		62F589A5209B126600D4C257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62F589A4209B126600D4C257 /* Assets.xcassets */; };
-		62F589A8209B126600D4C257 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62F589A6209B126600D4C257 /* LaunchScreen.storyboard */; };
-		62F589AB209B126600D4C257 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F589AA209B126600D4C257 /* main.m */; };
-		62F589B5209B126600D4C257 /* AddrBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F589B4209B126600D4C257 /* AddrBookTests.m */; };
-		62F589C0209B126600D4C257 /* AddrBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F589BF209B126600D4C257 /* AddrBookUITests.m */; };
-		62F589CE209B44D700D4C257 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 62F589CD209B44D700D4C257 /* Podfile */; };
-		87381ED5911902589599CAAF /* libPods-AddrBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAA4FEE8B6AB3BECB4DA3879 /* libPods-AddrBook.a */; };
+		5EDC628F3529CD3E4283B1BB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5EDC6E471DAABA4F6867545E /* .gitignore */; };
+		624D4898209C556D00763942 /* ContactListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 624D4897209C556D00763942 /* ContactListViewController.m */; };
+		628E0ECE209C38540099B977 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 628E0ECD209C38540099B977 /* AppDelegate.m */; };
+		628E0ED1209C38540099B977 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 628E0ED0209C38540099B977 /* ViewController.m */; };
+		628E0ED4209C38540099B977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628E0ED2209C38540099B977 /* Main.storyboard */; };
+		628E0ED7209C38540099B977 /* AddrBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 628E0ED5209C38540099B977 /* AddrBook.xcdatamodeld */; };
+		628E0ED9209C38550099B977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628E0ED8209C38550099B977 /* Assets.xcassets */; };
+		628E0EDC209C38550099B977 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628E0EDA209C38550099B977 /* LaunchScreen.storyboard */; };
+		628E0EDF209C38550099B977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 628E0EDE209C38550099B977 /* main.m */; };
+		628E0EE9209C38550099B977 /* AddrBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 628E0EE8209C38550099B977 /* AddrBookTests.m */; };
+		628E0EF4209C38550099B977 /* AddrBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 628E0EF3209C38550099B977 /* AddrBookUITests.m */; };
+		628E0F02209C386C0099B977 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 628E0F01209C386C0099B977 /* Podfile */; };
+		62AC66D1209C5F51003874CE /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AC66D0209C5F51003874CE /* RegisterViewController.m */; };
+		62AC66D4209D8383003874CE /* MeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AC66D3209D8383003874CE /* MeTableViewController.m */; };
+		62AC66D6209DFB39003874CE /* Contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62AC66D5209DFB39003874CE /* Contacts.plist */; };
+		62AC66D9209EB353003874CE /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AC66D8209EB353003874CE /* Contact.m */; };
+		62AC66DC209EDCF3003874CE /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AC66DB209EDCF3003874CE /* DetailTableViewController.m */; };
+		B59CFF3FB7F0BACCB5342618 /* libPods-AddrBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1233C02A9B0F73B25CA5B5AA /* libPods-AddrBook.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		62F589B1209B126600D4C257 /* PBXContainerItemProxy */ = {
+		628E0EE5209C38550099B977 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 62F5898D209B126400D4C257 /* Project object */;
+			containerPortal = 628E0EC1209C38540099B977 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 62F58994209B126400D4C257;
+			remoteGlobalIDString = 628E0EC8209C38540099B977;
 			remoteInfo = AddrBook;
 		};
-		62F589BC209B126600D4C257 /* PBXContainerItemProxy */ = {
+		628E0EF0209C38550099B977 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 62F5898D209B126400D4C257 /* Project object */;
+			containerPortal = 628E0EC1209C38540099B977 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 62F58994209B126400D4C257;
+			remoteGlobalIDString = 628E0EC8209C38540099B977;
 			remoteInfo = AddrBook;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4033D0EB0594D4060500598E /* Pods-AddrBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddrBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-AddrBook/Pods-AddrBook.release.xcconfig"; sourceTree = "<group>"; };
-		62F58995209B126400D4C257 /* AddrBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddrBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		62F58998209B126400D4C257 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		62F58999209B126400D4C257 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		62F5899B209B126400D4C257 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		62F5899C209B126400D4C257 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		62F5899F209B126400D4C257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		62F589A2209B126400D4C257 /* AddrBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AddrBook.xcdatamodel; sourceTree = "<group>"; };
-		62F589A4209B126600D4C257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		62F589A7209B126600D4C257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		62F589A9209B126600D4C257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62F589AA209B126600D4C257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		62F589B0209B126600D4C257 /* AddrBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddrBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		62F589B4209B126600D4C257 /* AddrBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddrBookTests.m; sourceTree = "<group>"; };
-		62F589B6209B126600D4C257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62F589BB209B126600D4C257 /* AddrBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddrBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		62F589BF209B126600D4C257 /* AddrBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddrBookUITests.m; sourceTree = "<group>"; };
-		62F589C1209B126600D4C257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		62F589CD209B44D700D4C257 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		CF9E2678E49A5ACEE4D08A9A /* Pods-AddrBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddrBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AddrBook/Pods-AddrBook.debug.xcconfig"; sourceTree = "<group>"; };
-		FAA4FEE8B6AB3BECB4DA3879 /* libPods-AddrBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AddrBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F7FCB78831C215B08E6491 /* Pods-AddrBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddrBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-AddrBook/Pods-AddrBook.release.xcconfig"; sourceTree = "<group>"; };
+		1233C02A9B0F73B25CA5B5AA /* libPods-AddrBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AddrBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EDC6E471DAABA4F6867545E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
+		624D4896209C556D00763942 /* ContactListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactListViewController.h; sourceTree = "<group>"; };
+		624D4897209C556D00763942 /* ContactListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactListViewController.m; sourceTree = "<group>"; };
+		628E0EC9209C38540099B977 /* AddrBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddrBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		628E0ECC209C38540099B977 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		628E0ECD209C38540099B977 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		628E0ECF209C38540099B977 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		628E0ED0209C38540099B977 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		628E0ED3209C38540099B977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		628E0ED6209C38540099B977 /* AddrBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AddrBook.xcdatamodel; sourceTree = "<group>"; };
+		628E0ED8209C38550099B977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		628E0EDB209C38550099B977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		628E0EDD209C38550099B977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		628E0EDE209C38550099B977 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		628E0EE4209C38550099B977 /* AddrBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddrBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		628E0EE8209C38550099B977 /* AddrBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddrBookTests.m; sourceTree = "<group>"; };
+		628E0EEA209C38550099B977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		628E0EEF209C38550099B977 /* AddrBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddrBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		628E0EF3209C38550099B977 /* AddrBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddrBookUITests.m; sourceTree = "<group>"; };
+		628E0EF5209C38550099B977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		628E0F01209C386C0099B977 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		62AC66CF209C5F51003874CE /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		62AC66D0209C5F51003874CE /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		62AC66D2209D8383003874CE /* MeTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeTableViewController.h; sourceTree = "<group>"; };
+		62AC66D3209D8383003874CE /* MeTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeTableViewController.m; sourceTree = "<group>"; };
+		62AC66D5209DFB39003874CE /* Contacts.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Contacts.plist; sourceTree = "<group>"; };
+		62AC66D7209EB353003874CE /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		62AC66D8209EB353003874CE /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		62AC66DA209EDCF3003874CE /* DetailTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailTableViewController.h; sourceTree = "<group>"; };
+		62AC66DB209EDCF3003874CE /* DetailTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
+		E533E42C61D6C843C69860C4 /* Pods-AddrBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddrBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AddrBook/Pods-AddrBook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		62F58992209B126400D4C257 /* Frameworks */ = {
+		628E0EC6209C38540099B977 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87381ED5911902589599CAAF /* libPods-AddrBook.a in Frameworks */,
+				B59CFF3FB7F0BACCB5342618 /* libPods-AddrBook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62F589AD209B126600D4C257 /* Frameworks */ = {
+		628E0EE1209C38550099B977 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62F589B8209B126600D4C257 /* Frameworks */ = {
+		628E0EEC209C38550099B977 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,77 +106,89 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		62F5898C209B126400D4C257 = {
+		53F2E84AD7C9BC5122FCD4C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				62F589CD209B44D700D4C257 /* Podfile */,
-				62F58997209B126400D4C257 /* AddrBook */,
-				62F589B3209B126600D4C257 /* AddrBookTests */,
-				62F589BE209B126600D4C257 /* AddrBookUITests */,
-				62F58996209B126400D4C257 /* Products */,
-				7863D71564D7FCF40C6CC19E /* Pods */,
-				72FB274BBF6D2270DDF2674A /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		62F58996209B126400D4C257 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				62F58995209B126400D4C257 /* AddrBook.app */,
-				62F589B0209B126600D4C257 /* AddrBookTests.xctest */,
-				62F589BB209B126600D4C257 /* AddrBookUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		62F58997209B126400D4C257 /* AddrBook */ = {
-			isa = PBXGroup;
-			children = (
-				62F58998209B126400D4C257 /* AppDelegate.h */,
-				62F58999209B126400D4C257 /* AppDelegate.m */,
-				62F5899B209B126400D4C257 /* ViewController.h */,
-				62F5899C209B126400D4C257 /* ViewController.m */,
-				62F5899E209B126400D4C257 /* Main.storyboard */,
-				62F589A4209B126600D4C257 /* Assets.xcassets */,
-				62F589A6209B126600D4C257 /* LaunchScreen.storyboard */,
-				62F589A9209B126600D4C257 /* Info.plist */,
-				62F589AA209B126600D4C257 /* main.m */,
-				62F589A1209B126400D4C257 /* AddrBook.xcdatamodeld */,
-			);
-			path = AddrBook;
-			sourceTree = "<group>";
-		};
-		62F589B3209B126600D4C257 /* AddrBookTests */ = {
-			isa = PBXGroup;
-			children = (
-				62F589B4209B126600D4C257 /* AddrBookTests.m */,
-				62F589B6209B126600D4C257 /* Info.plist */,
-			);
-			path = AddrBookTests;
-			sourceTree = "<group>";
-		};
-		62F589BE209B126600D4C257 /* AddrBookUITests */ = {
-			isa = PBXGroup;
-			children = (
-				62F589BF209B126600D4C257 /* AddrBookUITests.m */,
-				62F589C1209B126600D4C257 /* Info.plist */,
-			);
-			path = AddrBookUITests;
-			sourceTree = "<group>";
-		};
-		72FB274BBF6D2270DDF2674A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FAA4FEE8B6AB3BECB4DA3879 /* libPods-AddrBook.a */,
+				1233C02A9B0F73B25CA5B5AA /* libPods-AddrBook.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7863D71564D7FCF40C6CC19E /* Pods */ = {
+		628E0EC0209C38540099B977 = {
 			isa = PBXGroup;
 			children = (
-				CF9E2678E49A5ACEE4D08A9A /* Pods-AddrBook.debug.xcconfig */,
-				4033D0EB0594D4060500598E /* Pods-AddrBook.release.xcconfig */,
+				628E0F01209C386C0099B977 /* Podfile */,
+				628E0ECB209C38540099B977 /* AddrBook */,
+				628E0EE7209C38550099B977 /* AddrBookTests */,
+				628E0EF2209C38550099B977 /* AddrBookUITests */,
+				628E0ECA209C38540099B977 /* Products */,
+				C3417FB74D7687B2304892D5 /* Pods */,
+				53F2E84AD7C9BC5122FCD4C6 /* Frameworks */,
+				5EDC6E471DAABA4F6867545E /* .gitignore */,
+			);
+			sourceTree = "<group>";
+		};
+		628E0ECA209C38540099B977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				628E0EC9209C38540099B977 /* AddrBook.app */,
+				628E0EE4209C38550099B977 /* AddrBookTests.xctest */,
+				628E0EEF209C38550099B977 /* AddrBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		628E0ECB209C38540099B977 /* AddrBook */ = {
+			isa = PBXGroup;
+			children = (
+				628E0ECC209C38540099B977 /* AppDelegate.h */,
+				628E0ECD209C38540099B977 /* AppDelegate.m */,
+				628E0ECF209C38540099B977 /* ViewController.h */,
+				628E0ED0209C38540099B977 /* ViewController.m */,
+				628E0ED2209C38540099B977 /* Main.storyboard */,
+				628E0ED8209C38550099B977 /* Assets.xcassets */,
+				628E0EDA209C38550099B977 /* LaunchScreen.storyboard */,
+				628E0EDD209C38550099B977 /* Info.plist */,
+				628E0EDE209C38550099B977 /* main.m */,
+				628E0ED5209C38540099B977 /* AddrBook.xcdatamodeld */,
+				624D4896209C556D00763942 /* ContactListViewController.h */,
+				624D4897209C556D00763942 /* ContactListViewController.m */,
+				62AC66CF209C5F51003874CE /* RegisterViewController.h */,
+				62AC66D0209C5F51003874CE /* RegisterViewController.m */,
+				62AC66D2209D8383003874CE /* MeTableViewController.h */,
+				62AC66D3209D8383003874CE /* MeTableViewController.m */,
+				62AC66D5209DFB39003874CE /* Contacts.plist */,
+				62AC66D7209EB353003874CE /* Contact.h */,
+				62AC66D8209EB353003874CE /* Contact.m */,
+				62AC66DA209EDCF3003874CE /* DetailTableViewController.h */,
+				62AC66DB209EDCF3003874CE /* DetailTableViewController.m */,
+			);
+			path = AddrBook;
+			sourceTree = "<group>";
+		};
+		628E0EE7209C38550099B977 /* AddrBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				628E0EE8209C38550099B977 /* AddrBookTests.m */,
+				628E0EEA209C38550099B977 /* Info.plist */,
+			);
+			path = AddrBookTests;
+			sourceTree = "<group>";
+		};
+		628E0EF2209C38550099B977 /* AddrBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				628E0EF3209C38550099B977 /* AddrBookUITests.m */,
+				628E0EF5209C38550099B977 /* Info.plist */,
+			);
+			path = AddrBookUITests;
+			sourceTree = "<group>";
+		};
+		C3417FB74D7687B2304892D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E533E42C61D6C843C69860C4 /* Pods-AddrBook.debug.xcconfig */,
+				02F7FCB78831C215B08E6491 /* Pods-AddrBook.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -165,16 +196,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		62F58994209B126400D4C257 /* AddrBook */ = {
+		628E0EC8209C38540099B977 /* AddrBook */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 62F589C4209B126600D4C257 /* Build configuration list for PBXNativeTarget "AddrBook" */;
+			buildConfigurationList = 628E0EF8209C38550099B977 /* Build configuration list for PBXNativeTarget "AddrBook" */;
 			buildPhases = (
-				A1342342E471004E46FCA5A7 /* [CP] Check Pods Manifest.lock */,
-				62F58991209B126400D4C257 /* Sources */,
-				62F58992209B126400D4C257 /* Frameworks */,
-				62F58993209B126400D4C257 /* Resources */,
-				AEE97B100A4FF4CA1C08C4F1 /* [CP] Embed Pods Frameworks */,
-				CBD119BAE1B52C9BC5F55413 /* [CP] Copy Pods Resources */,
+				09B2C54010EAE490B8B2F284 /* [CP] Check Pods Manifest.lock */,
+				628E0EC5209C38540099B977 /* Sources */,
+				628E0EC6209C38540099B977 /* Frameworks */,
+				628E0EC7209C38540099B977 /* Resources */,
+				770E0E4A72CF79CC75D719B1 /* [CP] Embed Pods Frameworks */,
+				E88541B137A9E47A110F6A55 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,68 +213,71 @@
 			);
 			name = AddrBook;
 			productName = AddrBook;
-			productReference = 62F58995209B126400D4C257 /* AddrBook.app */;
+			productReference = 628E0EC9209C38540099B977 /* AddrBook.app */;
 			productType = "com.apple.product-type.application";
 		};
-		62F589AF209B126600D4C257 /* AddrBookTests */ = {
+		628E0EE3209C38550099B977 /* AddrBookTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 62F589C7209B126600D4C257 /* Build configuration list for PBXNativeTarget "AddrBookTests" */;
+			buildConfigurationList = 628E0EFB209C38550099B977 /* Build configuration list for PBXNativeTarget "AddrBookTests" */;
 			buildPhases = (
-				62F589AC209B126600D4C257 /* Sources */,
-				62F589AD209B126600D4C257 /* Frameworks */,
-				62F589AE209B126600D4C257 /* Resources */,
+				628E0EE0209C38550099B977 /* Sources */,
+				628E0EE1209C38550099B977 /* Frameworks */,
+				628E0EE2209C38550099B977 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				62F589B2209B126600D4C257 /* PBXTargetDependency */,
+				628E0EE6209C38550099B977 /* PBXTargetDependency */,
 			);
 			name = AddrBookTests;
 			productName = AddrBookTests;
-			productReference = 62F589B0209B126600D4C257 /* AddrBookTests.xctest */;
+			productReference = 628E0EE4209C38550099B977 /* AddrBookTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		62F589BA209B126600D4C257 /* AddrBookUITests */ = {
+		628E0EEE209C38550099B977 /* AddrBookUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 62F589CA209B126600D4C257 /* Build configuration list for PBXNativeTarget "AddrBookUITests" */;
+			buildConfigurationList = 628E0EFE209C38550099B977 /* Build configuration list for PBXNativeTarget "AddrBookUITests" */;
 			buildPhases = (
-				62F589B7209B126600D4C257 /* Sources */,
-				62F589B8209B126600D4C257 /* Frameworks */,
-				62F589B9209B126600D4C257 /* Resources */,
+				628E0EEB209C38550099B977 /* Sources */,
+				628E0EEC209C38550099B977 /* Frameworks */,
+				628E0EED209C38550099B977 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				62F589BD209B126600D4C257 /* PBXTargetDependency */,
+				628E0EF1209C38550099B977 /* PBXTargetDependency */,
 			);
 			name = AddrBookUITests;
 			productName = AddrBookUITests;
-			productReference = 62F589BB209B126600D4C257 /* AddrBookUITests.xctest */;
+			productReference = 628E0EEF209C38550099B977 /* AddrBookUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		62F5898D209B126400D4C257 /* Project object */ = {
+		628E0EC1209C38540099B977 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					save,
+				);
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = houlx.ssdut;
 				TargetAttributes = {
-					62F58994209B126400D4C257 = {
+					628E0EC8209C38540099B977 = {
 						CreatedOnToolsVersion = 9.3;
 					};
-					62F589AF209B126600D4C257 = {
+					628E0EE3209C38550099B977 = {
 						CreatedOnToolsVersion = 9.3;
-						TestTargetID = 62F58994209B126400D4C257;
+						TestTargetID = 628E0EC8209C38540099B977;
 					};
-					62F589BA209B126600D4C257 = {
+					628E0EEE209C38550099B977 = {
 						CreatedOnToolsVersion = 9.3;
-						TestTargetID = 62F58994209B126400D4C257;
+						TestTargetID = 628E0EC8209C38540099B977;
 					};
 				};
 			};
-			buildConfigurationList = 62F58990209B126400D4C257 /* Build configuration list for PBXProject "AddrBook" */;
+			buildConfigurationList = 628E0EC4209C38540099B977 /* Build configuration list for PBXProject "AddrBook" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -251,38 +285,40 @@
 				en,
 				Base,
 			);
-			mainGroup = 62F5898C209B126400D4C257;
-			productRefGroup = 62F58996209B126400D4C257 /* Products */;
+			mainGroup = 628E0EC0209C38540099B977;
+			productRefGroup = 628E0ECA209C38540099B977 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				62F58994209B126400D4C257 /* AddrBook */,
-				62F589AF209B126600D4C257 /* AddrBookTests */,
-				62F589BA209B126600D4C257 /* AddrBookUITests */,
+				628E0EC8209C38540099B977 /* AddrBook */,
+				628E0EE3209C38550099B977 /* AddrBookTests */,
+				628E0EEE209C38550099B977 /* AddrBookUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		62F58993209B126400D4C257 /* Resources */ = {
+		628E0EC7209C38540099B977 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62F589A8209B126600D4C257 /* LaunchScreen.storyboard in Resources */,
-				62F589A5209B126600D4C257 /* Assets.xcassets in Resources */,
-				62F589CE209B44D700D4C257 /* Podfile in Resources */,
-				62F589A0209B126400D4C257 /* Main.storyboard in Resources */,
+				628E0EDC209C38550099B977 /* LaunchScreen.storyboard in Resources */,
+				628E0ED9209C38550099B977 /* Assets.xcassets in Resources */,
+				628E0F02209C386C0099B977 /* Podfile in Resources */,
+				628E0ED4209C38540099B977 /* Main.storyboard in Resources */,
+				62AC66D6209DFB39003874CE /* Contacts.plist in Resources */,
+				5EDC628F3529CD3E4283B1BB /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62F589AE209B126600D4C257 /* Resources */ = {
+		628E0EE2209C38550099B977 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62F589B9209B126600D4C257 /* Resources */ = {
+		628E0EED209C38550099B977 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,7 +328,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A1342342E471004E46FCA5A7 /* [CP] Check Pods Manifest.lock */ = {
+		09B2C54010EAE490B8B2F284 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,7 +346,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AEE97B100A4FF4CA1C08C4F1 /* [CP] Embed Pods Frameworks */ = {
+		770E0E4A72CF79CC75D719B1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,7 +361,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AddrBook/Pods-AddrBook-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CBD119BAE1B52C9BC5F55413 /* [CP] Copy Pods Resources */ = {
+		E88541B137A9E47A110F6A55 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,61 +379,66 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		62F58991209B126400D4C257 /* Sources */ = {
+		628E0EC5209C38540099B977 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62F589A3209B126400D4C257 /* AddrBook.xcdatamodeld in Sources */,
-				62F5899D209B126400D4C257 /* ViewController.m in Sources */,
-				62F589AB209B126600D4C257 /* main.m in Sources */,
-				62F5899A209B126400D4C257 /* AppDelegate.m in Sources */,
+				62AC66D9209EB353003874CE /* Contact.m in Sources */,
+				628E0ED7209C38540099B977 /* AddrBook.xcdatamodeld in Sources */,
+				624D4898209C556D00763942 /* ContactListViewController.m in Sources */,
+				62AC66DC209EDCF3003874CE /* DetailTableViewController.m in Sources */,
+				628E0ED1209C38540099B977 /* ViewController.m in Sources */,
+				628E0EDF209C38550099B977 /* main.m in Sources */,
+				62AC66D1209C5F51003874CE /* RegisterViewController.m in Sources */,
+				62AC66D4209D8383003874CE /* MeTableViewController.m in Sources */,
+				628E0ECE209C38540099B977 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62F589AC209B126600D4C257 /* Sources */ = {
+		628E0EE0209C38550099B977 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62F589B5209B126600D4C257 /* AddrBookTests.m in Sources */,
+				628E0EE9209C38550099B977 /* AddrBookTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62F589B7209B126600D4C257 /* Sources */ = {
+		628E0EEB209C38550099B977 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62F589C0209B126600D4C257 /* AddrBookUITests.m in Sources */,
+				628E0EF4209C38550099B977 /* AddrBookUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		62F589B2209B126600D4C257 /* PBXTargetDependency */ = {
+		628E0EE6209C38550099B977 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 62F58994209B126400D4C257 /* AddrBook */;
-			targetProxy = 62F589B1209B126600D4C257 /* PBXContainerItemProxy */;
+			target = 628E0EC8209C38540099B977 /* AddrBook */;
+			targetProxy = 628E0EE5209C38550099B977 /* PBXContainerItemProxy */;
 		};
-		62F589BD209B126600D4C257 /* PBXTargetDependency */ = {
+		628E0EF1209C38550099B977 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 62F58994209B126400D4C257 /* AddrBook */;
-			targetProxy = 62F589BC209B126600D4C257 /* PBXContainerItemProxy */;
+			target = 628E0EC8209C38540099B977 /* AddrBook */;
+			targetProxy = 628E0EF0209C38550099B977 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		62F5899E209B126400D4C257 /* Main.storyboard */ = {
+		628E0ED2209C38540099B977 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				62F5899F209B126400D4C257 /* Base */,
+				628E0ED3209C38540099B977 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		62F589A6209B126600D4C257 /* LaunchScreen.storyboard */ = {
+		628E0EDA209C38550099B977 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				62F589A7209B126600D4C257 /* Base */,
+				628E0EDB209C38550099B977 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -405,7 +446,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		62F589C2209B126600D4C257 /* Debug */ = {
+		628E0EF6209C38550099B977 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -463,7 +504,7 @@
 			};
 			name = Debug;
 		};
-		62F589C3209B126600D4C257 /* Release */ = {
+		628E0EF7209C38550099B977 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -515,44 +556,70 @@
 			};
 			name = Release;
 		};
-		62F589C5209B126600D4C257 /* Debug */ = {
+		628E0EF9209C38550099B977 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF9E2678E49A5ACEE4D08A9A /* Pods-AddrBook.debug.xcconfig */;
+			baseConfigurationReference = E533E42C61D6C843C69860C4 /* Pods-AddrBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UD4PDXT9JQ;
 				INFOPLIST_FILE = AddrBook/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hou.AddrBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/../Pods\"/**",
+					"\"${PROJECT_DIR}/../Pods\"/**",
+					"\"${PROJECT_DIR}/../Pods\"/**",
+					"\"${PROJECT_DIR}/../Pods\"/**",
+					"\"${PROJECT_DIR}/../Pods\"/**",
+					"\"${PROJECT_DIR}/../Pods\"/**",
+				);
 			};
 			name = Debug;
 		};
-		62F589C6209B126600D4C257 /* Release */ = {
+		628E0EFA209C38550099B977 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4033D0EB0594D4060500598E /* Pods-AddrBook.release.xcconfig */;
+			baseConfigurationReference = 02F7FCB78831C215B08E6491 /* Pods-AddrBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UD4PDXT9JQ;
 				INFOPLIST_FILE = AddrBook/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hou.AddrBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = (
+					"\"${PROJECT_DIR}/../Pods\"/**",
+					"\"${PROJECT_DIR}/../Pods\"/**",
+					"\"${PROJECT_DIR}/../Pods\"/**",
+					"\"${PROJECT_DIR}/../Pods\"/**",
+					"\"${PROJECT_DIR}/../Pods\"/**",
+					"\"${PROJECT_DIR}/../Pods\"/**",
+				);
 			};
 			name = Release;
 		};
-		62F589C8209B126600D4C257 /* Debug */ = {
+		628E0EFC209C38550099B977 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UD4PDXT9JQ;
 				INFOPLIST_FILE = AddrBookTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hou.AddrBookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -560,14 +627,18 @@
 			};
 			name = Debug;
 		};
-		62F589C9209B126600D4C257 /* Release */ = {
+		628E0EFD209C38550099B977 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UD4PDXT9JQ;
 				INFOPLIST_FILE = AddrBookTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hou.AddrBookTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -575,13 +646,17 @@
 			};
 			name = Release;
 		};
-		62F589CB209B126600D4C257 /* Debug */ = {
+		628E0EFF209C38550099B977 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UD4PDXT9JQ;
 				INFOPLIST_FILE = AddrBookUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hou.AddrBookUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -589,13 +664,17 @@
 			};
 			name = Debug;
 		};
-		62F589CC209B126600D4C257 /* Release */ = {
+		628E0F00209C38550099B977 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UD4PDXT9JQ;
 				INFOPLIST_FILE = AddrBookUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = hou.AddrBookUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -606,38 +685,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		62F58990209B126400D4C257 /* Build configuration list for PBXProject "AddrBook" */ = {
+		628E0EC4209C38540099B977 /* Build configuration list for PBXProject "AddrBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				62F589C2209B126600D4C257 /* Debug */,
-				62F589C3209B126600D4C257 /* Release */,
+				628E0EF6209C38550099B977 /* Debug */,
+				628E0EF7209C38550099B977 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		62F589C4209B126600D4C257 /* Build configuration list for PBXNativeTarget "AddrBook" */ = {
+		628E0EF8209C38550099B977 /* Build configuration list for PBXNativeTarget "AddrBook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				62F589C5209B126600D4C257 /* Debug */,
-				62F589C6209B126600D4C257 /* Release */,
+				628E0EF9209C38550099B977 /* Debug */,
+				628E0EFA209C38550099B977 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		62F589C7209B126600D4C257 /* Build configuration list for PBXNativeTarget "AddrBookTests" */ = {
+		628E0EFB209C38550099B977 /* Build configuration list for PBXNativeTarget "AddrBookTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				62F589C8209B126600D4C257 /* Debug */,
-				62F589C9209B126600D4C257 /* Release */,
+				628E0EFC209C38550099B977 /* Debug */,
+				628E0EFD209C38550099B977 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		62F589CA209B126600D4C257 /* Build configuration list for PBXNativeTarget "AddrBookUITests" */ = {
+		628E0EFE209C38550099B977 /* Build configuration list for PBXNativeTarget "AddrBookUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				62F589CB209B126600D4C257 /* Debug */,
-				62F589CC209B126600D4C257 /* Release */,
+				628E0EFF209C38550099B977 /* Debug */,
+				628E0F00209C38550099B977 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -645,17 +724,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		62F589A1209B126400D4C257 /* AddrBook.xcdatamodeld */ = {
+		628E0ED5209C38540099B977 /* AddrBook.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				62F589A2209B126400D4C257 /* AddrBook.xcdatamodel */,
+				628E0ED6209C38540099B977 /* AddrBook.xcdatamodel */,
 			);
-			currentVersion = 62F589A2209B126400D4C257 /* AddrBook.xcdatamodel */;
+			currentVersion = 628E0ED6209C38540099B977 /* AddrBook.xcdatamodel */;
 			path = AddrBook.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 62F5898D209B126400D4C257 /* Project object */;
+	rootObject = 628E0EC1209C38540099B977 /* Project object */;
 }
