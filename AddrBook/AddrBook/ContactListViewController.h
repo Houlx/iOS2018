@@ -16,5 +16,6 @@
 @interface ContactListViewController : UITableViewController
 
 @property(nonatomic, strong) NSMutableArray *listContact;
+@property(nonatomic, strong) NSMutableArray *listFilterContact;
 
 @end

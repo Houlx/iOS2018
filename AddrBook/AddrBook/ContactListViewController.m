@@ -8,7 +8,9 @@
 
 #import "ContactListViewController.h"
 
-@interface ContactListViewController ()
+@interface ContactListViewController () <UISearchBarDelegate>
+@property(weak, nonatomic) IBOutlet UISearchBar *searchBar;
+
 
 @end
 
@@ -19,6 +21,8 @@
     // Do any additional setup after loading the view.
     self.navigationController.view.backgroundColor = [UIColor whiteColor];
 
+    self.searchBar.delegate = self;
+
     BmobUser *localUser = [BmobUser currentUser];
     if (!localUser) {
         [self performSegueWithIdentifier:@"login" sender:self];
@@ -26,12 +30,54 @@
 
     self.listContact = [NSMutableArray array];
     [self searchTable];
+    self.listFilterContact = [NSMutableArray arrayWithArray:self.listContact];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    if ([searchText isEqualToString:@""]) {
+//        self.listFilterContact = self.listContact;
+        self.listFilterContact = [NSMutableArray arrayWithArray:self.listContact];
+    } else {
+//        for (Contact *contact in self.listContact) {
+////            if ([contact.name hasPrefix:searchText]) {
+////                [self.listFilterContact addObject:contact];
+////            }
+//            NSRange text = [contact.name rangeOfString:searchText options:NSCaseInsensitiveSearch];
+//            if (text.location != NSNotFound) {
+//                [self.listFilterContact addObject:contact];
+//            }
+//        }
+        [self.listFilterContact removeAllObjects];
+        [self.listContact enumerateObjectsUsingBlock:^(Contact *contact, NSUInteger index, BOOL *stop) {
+            if ([contact.name rangeOfString:searchText options:NSCaseInsensitiveSearch].location != NSNotFound) {
+                *stop = YES;
+                if (*stop == YES) {
+                    [self.listFilterContact addObject:contact];
+                }
+
+            }
+
+        }];
+    }
+//    for (Contact *contact1 in self.listContact) {
+//        NSLog(@"%@", contact1.name);
+//    }
+    [self.tableView reloadData];
+}
+
+- (nullable NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.searchBar resignFirstResponder];
+    return indexPath;
+}
+
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [self.searchBar resignFirstResponder];
 }
 
 - (void)searchTable {
@@ -55,13 +101,13 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.listContact count];
+    return [self.listFilterContact count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellIdentifier" forIndexPath:indexPath];
     NSUInteger row = (NSUInteger) [indexPath row];
-    Contact *contact = (Contact *) self.listContact[row];
+    Contact *contact = (Contact *) self.listFilterContact[row];
     cell.textLabel.text = contact.name;
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
