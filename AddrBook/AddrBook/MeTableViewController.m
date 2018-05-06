@@ -22,8 +22,17 @@
 }
 
 - (IBAction)onLogOutClick:(id)sender {
-    [self performSegueWithIdentifier:@"logout" sender:self];
-    [BmobUser logout];
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Log Out" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *NoAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *YesAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [self performSegueWithIdentifier:@"logout" sender:self];
+        [BmobUser logout];
+    }];
+    [alertController addAction:NoAction];
+    [alertController addAction:YesAction];
+    [self presentViewController:alertController animated:true completion:nil];
+//    [self performSegueWithIdentifier:@"logout" sender:self];
+//    [BmobUser logout];
 }
 
 - (void)viewDidLoad {
