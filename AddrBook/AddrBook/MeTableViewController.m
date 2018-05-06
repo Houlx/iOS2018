@@ -31,24 +31,11 @@
     [alertController addAction:NoAction];
     [alertController addAction:YesAction];
     [self presentViewController:alertController animated:true completion:nil];
-//    [self performSegueWithIdentifier:@"logout" sender:self];
-//    [BmobUser logout];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-//    self.username.text = [[BmobUser currentUser] username];
-//    if ([[BmobUser currentUser] email] == nil) {
-//        self.username.text = [[BmobUser currentUser] objectId];
-//    } else {
-//        self.username.text = [[BmobUser currentUser] email];
-//    }
     self.username.text = [[BmobUser currentUser] username];
 }
 
@@ -58,7 +45,6 @@
 }
 
 - (IBAction)backToMeSegue:(UIStoryboardSegue *)sender {
-//    NSLog(@"unwindSegue %@", sender);
 }
 
 #pragma mark - Table view data source

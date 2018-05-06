@@ -21,16 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
-    self.office.text = self.contact.office;
-//    self.personalPhoneBtn.titleLabel.text = self.contact.phonePersonal;
-//    self.officePhoneBtn.titleLabel.text = self.contact.phoneOffice;
-//    self.emailBtn.titleLabel.text = self.contact.email;
+
+    self.office.text = [self.contact office];
     [self.personalPhoneBtn setTitle:self.contact.phonePersonal forState:UIControlStateNormal];
     [self.officePhoneBtn setTitle:self.contact.phoneOffice forState:UIControlStateNormal];
     [self.emailBtn setTitle:self.contact.email forState:UIControlStateNormal];
@@ -126,8 +119,6 @@
 
 - (void)openUrl:(NSString *)urlStr {
     NSURL *url = [NSURL URLWithString:urlStr];
-//    UIApplication *application = [UIApplication sharedApplication];
-//    [[UIApplication sharedApplication] openURL:url];
     [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
 }
 @end

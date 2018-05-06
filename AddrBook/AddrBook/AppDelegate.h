@@ -14,7 +14,6 @@
 
 @property(nonatomic, strong) UIWindow *window;
 @property(readonly, strong) NSPersistentContainer *persistentContainer;
-@property(nonatomic, strong) NSMutableArray *listName;
 
 - (void)saveContext;
 

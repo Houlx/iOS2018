@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "ContactListViewController.h"
-#import <BmobSDK/BmobUser.h>
 
 @interface ViewController () <UITextFieldDelegate, UITextViewDelegate>
 
@@ -17,10 +16,6 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-//    BmobUser *localuser = [BmobUser currentUser];
-//    if (localuser) {
-//        [self performSegueWithIdentifier:@"contactlist" sender:self];
-//    }
     [super viewDidLoad];
 }
 
@@ -31,7 +26,6 @@
 - (IBAction)onClick:(id)sender {
     [BmobUser loginWithUsernameInBackground:self.username.text password:self.password.text block:^(BmobUser *user, NSError *error) {
         if (user) {
-//            [self performSegueWithIdentifier:@"contactlist" sender:self];
             [self dismissViewControllerAnimated:YES completion:nil];
         } else {
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Login Failed" message:@"Invalid Account or Password" preferredStyle:UIAlertControllerStyleAlert];
@@ -43,7 +37,6 @@
 }
 
 -(IBAction)backToLoginSegue:(UIStoryboardSegue *)sender{
-//    NSLog(@"unwindSegue %@", sender);
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {

@@ -27,8 +27,6 @@
 }
 
 - (IBAction)save:(id)sender {
-//        NSDictionary *dictionary = @{@"username": self.username.text};
-//        [[NSNotificationCenter defaultCenter] postNotificationName:@"RegisterCompletionNotification" object:nil userInfo:dictionary];
     BmobUser *user = [[BmobUser alloc] init];
     [user setUsername:self.username.text];
     [user setPassword:self.password.text];
@@ -45,12 +43,6 @@
         }
     }];
 }
-
-//- (IBAction)cancel:(id)sender {
-//    [self dismissViewControllerAnimated:TRUE completion:^{
-//
-//    }];
-//}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     return YES;

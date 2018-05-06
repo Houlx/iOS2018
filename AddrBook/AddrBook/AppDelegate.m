@@ -19,12 +19,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    BmobQuery *query = [BmobQuery queryWithClassName:@"Contact"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
-        for (BmobObject *object in array) {
-            [self.listName addObject:[object objectForKey:@"name"]];
-        }
-    }];
     return YES;
 }
 
