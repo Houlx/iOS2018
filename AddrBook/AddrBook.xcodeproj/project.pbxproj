@@ -10,7 +10,6 @@
 		5EDC628F3529CD3E4283B1BB /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5EDC6E471DAABA4F6867545E /* .gitignore */; };
 		624D4898209C556D00763942 /* ContactListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 624D4897209C556D00763942 /* ContactListViewController.m */; };
 		628E0ECE209C38540099B977 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 628E0ECD209C38540099B977 /* AppDelegate.m */; };
-		628E0ED1209C38540099B977 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 628E0ED0209C38540099B977 /* ViewController.m */; };
 		628E0ED4209C38540099B977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 628E0ED2209C38540099B977 /* Main.storyboard */; };
 		628E0ED7209C38540099B977 /* AddrBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 628E0ED5209C38540099B977 /* AddrBook.xcdatamodeld */; };
 		628E0ED9209C38550099B977 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 628E0ED8209C38550099B977 /* Assets.xcassets */; };
@@ -25,6 +24,8 @@
 		62AC66D9209EB353003874CE /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AC66D8209EB353003874CE /* Contact.m */; };
 		62AC66DC209EDCF3003874CE /* DetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AC66DB209EDCF3003874CE /* DetailTableViewController.m */; };
 		62AC66E2209F4751003874CE /* ModifyPasswordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AC66E1209F4751003874CE /* ModifyPasswordTableViewController.m */; };
+		62AC66E4209F6090003874CE /* ViewController in Resources */ = {isa = PBXBuildFile; fileRef = 62AC66E3209F6090003874CE /* ViewController */; };
+		62AC66E7209F6110003874CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62AC66E6209F610F003874CE /* ViewController.m */; };
 		B59CFF3FB7F0BACCB5342618 /* libPods-AddrBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1233C02A9B0F73B25CA5B5AA /* libPods-AddrBook.a */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +55,6 @@
 		628E0EC9209C38540099B977 /* AddrBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddrBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		628E0ECC209C38540099B977 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		628E0ECD209C38540099B977 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		628E0ECF209C38540099B977 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		628E0ED0209C38540099B977 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		628E0ED3209C38540099B977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		628E0ED6209C38540099B977 /* AddrBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AddrBook.xcdatamodel; sourceTree = "<group>"; };
 		628E0ED8209C38550099B977 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +79,9 @@
 		62AC66DB209EDCF3003874CE /* DetailTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewController.m; sourceTree = "<group>"; };
 		62AC66E0209F4751003874CE /* ModifyPasswordTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModifyPasswordTableViewController.h; sourceTree = "<group>"; };
 		62AC66E1209F4751003874CE /* ModifyPasswordTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModifyPasswordTableViewController.m; sourceTree = "<group>"; };
+		62AC66E3209F6090003874CE /* ViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewController; sourceTree = "<group>"; };
+		62AC66E5209F610F003874CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		62AC66E6209F610F003874CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E533E42C61D6C843C69860C4 /* Pods-AddrBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AddrBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AddrBook/Pods-AddrBook.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,10 +146,11 @@
 		628E0ECB209C38540099B977 /* AddrBook */ = {
 			isa = PBXGroup;
 			children = (
+				62AC66E5209F610F003874CE /* ViewController.h */,
+				62AC66E6209F610F003874CE /* ViewController.m */,
+				62AC66E3209F6090003874CE /* ViewController */,
 				628E0ECC209C38540099B977 /* AppDelegate.h */,
 				628E0ECD209C38540099B977 /* AppDelegate.m */,
-				628E0ECF209C38540099B977 /* ViewController.h */,
-				628E0ED0209C38540099B977 /* ViewController.m */,
 				628E0ED2209C38540099B977 /* Main.storyboard */,
 				628E0ED8209C38550099B977 /* Assets.xcassets */,
 				628E0EDA209C38550099B977 /* LaunchScreen.storyboard */,
@@ -311,6 +314,7 @@
 				628E0ED9209C38550099B977 /* Assets.xcassets in Resources */,
 				628E0F02209C386C0099B977 /* Podfile in Resources */,
 				628E0ED4209C38540099B977 /* Main.storyboard in Resources */,
+				62AC66E4209F6090003874CE /* ViewController in Resources */,
 				62AC66D6209DFB39003874CE /* Contacts.plist in Resources */,
 				5EDC628F3529CD3E4283B1BB /* .gitignore in Resources */,
 			);
@@ -392,7 +396,7 @@
 				628E0ED7209C38540099B977 /* AddrBook.xcdatamodeld in Sources */,
 				624D4898209C556D00763942 /* ContactListViewController.m in Sources */,
 				62AC66DC209EDCF3003874CE /* DetailTableViewController.m in Sources */,
-				628E0ED1209C38540099B977 /* ViewController.m in Sources */,
+				62AC66E7209F6110003874CE /* ViewController.m in Sources */,
 				628E0EDF209C38550099B977 /* main.m in Sources */,
 				62AC66E2209F4751003874CE /* ModifyPasswordTableViewController.m in Sources */,
 				62AC66D1209C5F51003874CE /* RegisterViewController.m in Sources */,
