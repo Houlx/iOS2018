@@ -11,6 +11,7 @@
 #import <BmobSDK/BmobQuery.h>
 #import <BmobSDK/BmobObject.h>
 #import "Contact.h"
+#import "DetailTableViewController.h"
 
 @interface ContactListViewController : UITableViewController
 

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Contact.h"
 
 @interface DetailTableViewController : UITableViewController
+
+@property(nonatomic, strong) Contact *contact;
 
 @end

@@ -9,6 +9,10 @@
 #import "DetailTableViewController.h"
 
 @interface DetailTableViewController ()
+@property(weak, nonatomic) IBOutlet UILabel *office;
+@property(weak, nonatomic) IBOutlet UIButton *personalPhoneBtn;
+@property(weak, nonatomic) IBOutlet UIButton *officePhoneBtn;
+@property(weak, nonatomic) IBOutlet UIButton *emailBtn;
 
 @end
 
@@ -16,12 +20,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
-    
+
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+    self.office.text = self.contact.office;
+//    self.personalPhoneBtn.titleLabel.text = self.contact.phonePersonal;
+//    self.officePhoneBtn.titleLabel.text = self.contact.phoneOffice;
+//    self.emailBtn.titleLabel.text = self.contact.email;
+    [self.personalPhoneBtn setTitle:self.contact.phonePersonal forState:UIControlStateNormal];
+    [self.officePhoneBtn setTitle:self.contact.phoneOffice forState:UIControlStateNormal];
+    [self.emailBtn setTitle:self.contact.email forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,17 +41,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
+//#pragma mark - Table view data source
+//
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//#warning Incomplete implementation, return the number of sections
+//    return 0;
+//}
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//#warning Incomplete implementation, return the number of rows
+//    return 0;
+//}
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -94,5 +106,28 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)onPersonalPhoneClick:(id)sender {
+    NSString *number = self.contact.phonePersonal;
+    NSString *url = [NSString stringWithFormat:@"tel://%@", number];
+    [self openUrl:url];
+}
 
+- (IBAction)onOfficePhoneClick:(id)sender {
+    NSString *number = self.contact.phoneOffice;
+    NSString *url = [NSString stringWithFormat:@"tel://%@", number];
+    [self openUrl:url];
+}
+
+- (IBAction)onEmailClick:(id)sender {
+    NSString *address = self.contact.email;
+    NSString *url = [NSString stringWithFormat:@"mailto://%@", address];
+    [self openUrl:url];
+}
+
+- (void)openUrl:(NSString *)urlStr {
+    NSURL *url = [NSURL URLWithString:urlStr];
+//    UIApplication *application = [UIApplication sharedApplication];
+//    [[UIApplication sharedApplication] openURL:url];
+    [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
+}
 @end

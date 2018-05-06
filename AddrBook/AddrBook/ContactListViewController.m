@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
     BmobUser *localUser = [BmobUser currentUser];
     if (!localUser) {
         [self performSegueWithIdentifier:@"login" sender:self];
@@ -24,6 +25,7 @@
 
     self.listContact = [NSMutableArray array];
     [self searchTable];
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,14 +64,23 @@
     return cell;
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"ShowDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSInteger selectedIndex = indexPath.row;
+
+        DetailTableViewController *detailTableViewController = segue.destinationViewController;
+        Contact *selectedContact = self.listContact[(NSUInteger) selectedIndex];
+        detailTableViewController.contact = selectedContact;
+        detailTableViewController.title = selectedContact.name;
+    }
 }
-*/
+
 
 @end
