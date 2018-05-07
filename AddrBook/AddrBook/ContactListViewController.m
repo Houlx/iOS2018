@@ -8,13 +8,28 @@
 
 #import "ContactListViewController.h"
 
+
 @interface ContactListViewController () <UISearchBarDelegate>
 @property(weak, nonatomic) IBOutlet UISearchBar *searchBar;
-
 
 @end
 
 @implementation ContactListViewController
+
+static const NSInteger SearchTableForDidLoad = 1;
+static const NSInteger SearchTableForRefresh = 2;
+
+- (IBAction)refreshData:(id)sender {
+    if (self.refreshControl.refreshing) {
+        self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Loading..."];
+        [self searchTableForUsageType:SearchTableForRefresh];
+        self.listFilterContact = [NSMutableArray arrayWithArray:self.listContact];
+
+        [self.refreshControl endRefreshing];
+        self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"下拉刷新"];
+        [self.tableView reloadData];
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,7 +44,7 @@
     }
 
     self.listContact = [NSMutableArray array];
-    [self searchTable];
+    [self searchTableForUsageType:SearchTableForDidLoad];
     self.listFilterContact = [NSMutableArray arrayWithArray:self.listContact];
 
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -63,11 +78,19 @@
     [self.searchBar resignFirstResponder];
 }
 
-- (void)searchTable {
+- (void)searchTableForUsageType:(NSInteger)usageType {
     BmobQuery *query = [BmobQuery queryWithClassName:@"Contact"];
-    query.cachePolicy = kBmobCachePolicyCacheThenNetwork;
+
+    if (usageType == SearchTableForDidLoad) {
+        query.cachePolicy = kBmobCachePolicyCacheThenNetwork;
+    } else if (usageType == SearchTableForRefresh) {
+        query.cachePolicy = kBmobCachePolicyNetworkOnly;
+    }
+
     [query findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
+
         [self.listContact removeAllObjects];
+
         for (BmobObject *object in array) {
             Contact *contact = [[Contact alloc] init];
             contact.name = [object objectForKey:@"name"];
