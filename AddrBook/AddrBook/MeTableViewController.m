@@ -39,6 +39,11 @@
     self.username.text = [[BmobUser currentUser] username];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.username.text = [[BmobUser currentUser] username];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
