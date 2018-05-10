@@ -56,13 +56,27 @@
 }
 */
 
-/*
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+     //Return NO if you do not want the specified item to be editable.
+    if (indexPath.section == 0 && indexPath.row == 0) {
+        return YES;
+    }
+    return NO;
 }
-*/
+
+- (NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewRowAction *msg=[UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleNormal title:@"SMS" handler:^(UITableViewRowAction *action, NSIndexPath *indexPath){
+        NSString *number = self.contact.phonePersonal;
+        NSString *url = [NSString stringWithFormat:@"sms://%@", number];
+        [self openUrl:url];
+        tableView.editing=NO;
+    }];
+    msg.backgroundColor=[UIColor darkGrayColor];
+    return @[msg];
+}
+
 
 /*
 // Override to support editing the table view.
